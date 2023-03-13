@@ -1,0 +1,40 @@
+@import 'fonts.css';
+
+:root {
+
+
+    /* colors */
+	--theme-background-1: hsl(0, 0%, 100%);
+    --theme-backround-2: hsl(0, 0%, 99%);
+
+    --theme-on-background: hsl(224, 34%, 26%);
+	
+	--theme-primary: hsl(222, 81%, 56%);
+	--theme-on-primary: hsl(0, 0%, 100%);
+
+	
+	--theme-accent-1: hsl(244, 88%, 67%);
+	--theme-accent-2: #28E2D4;
+	
+	--theme-gradient-1: hsl(337, 63%, 48%);
+	--theme-gradient-2: hsl(5, 100%, 67%);
+
+
+     /* typo */
+	--typography-font-primary: 'Nunito Sans Light';
+    --typography-font-primary-bold: 'Nunito Sans Black';
+    --typography-font-secondary: 'Ubuntu Light';
+    --typography-font-secondary-bold: 'Ubuntu Bold';
+
+
+}
+
+.heading {
+    color: var(--theme-on-background);
+    font-family: var(--typography-font-primary-bold);
+}
+
+.text {
+    color: var(--theme-on-background);
+    font-family: var(--typography-font-primary);
+}
