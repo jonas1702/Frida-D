@@ -1,0 +1,29 @@
+/*fonts*/
+/*Nunito Sans Light*/
+@font-face{
+    font-family: 'Nunito Sans Light';
+    src: url('../Fonts/NunitoSans-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+/*Nunito Sans Black*/
+@font-face{
+    font-family: 'Nunito Sans Black';
+    src: url('../Fonts/NunitoSans-Black.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+/*Ubuntu Bold*/
+@font-face{
+    font-family: 'Ubuntu Bold';
+    src: url('../Fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+/*Ubuntu Light*/
+@font-face{
+    font-family: 'Ubuntu Light';
+    src: url('../Fonts/Ubuntu-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
