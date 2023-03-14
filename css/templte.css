@@ -63,3 +63,11 @@
     color: var(--theme-on-background);
     font-family: var(--typography-font-primary);
 }
+
+.nav {
+    background-color: var(--theme-background-1);
+}
+
+.logo {
+    font-family: var(--typography-font-primary);
+}

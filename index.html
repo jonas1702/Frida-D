@@ -8,12 +8,60 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Frida D Test</title>
 </head>
 <body>
-    <header>
-
+    <header class="nav">
+        <div class="nav-container">
+            <div class="logo" tabindex="0">
+                    <img class="logo-image" src="./images/logo.svg" alt="Wunderkopf Logo / Frida D Logo">
+                    <div class="logo-text">
+                        <span>wunderkopf</span>
+                        <span>technologies</span>
+                    </div>
+                </div>
+            </div>
+            <span class="material-icons nav-menu" tabindex="0">menu</span>
+            <div class="nav-list--large">
+                <ul class="nav-list-container list--flex">
+                    <li class="nav-list-item list-item--active">
+                        <a class="list-item__text" href="#">Home</a>
+                    </li>
+                    <li class="nav-list-item list-item">
+                        <a class="list-item__text" href="#">About</a>
+                    </li>
+                    <li class="nav-list-item list-item">
+                        <a class="list-item__text" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="main-button nav-button" tabindex="0">
+                <span class="main-button-text">Sign in</span>
+            </button>
+        </div>
     </header>
+    <aside class="nav-list--mobile">
+        <ul class="nav-list-container">
+            <li class="nav-list-item--mobile list-item--active">
+                <span class="list-item__icon material-symbols-rounded">home</span>
+                <a class="list-item__text" href="#">Home</a>
+            </li>
+            <li class="nav-list-item--mobile list-item">
+                <span class="list-item__icon material-symbols-rounded">person</span>
+                <a class="list-item__text" href="#">About</a>
+            </li>
+            <li class="nav-list-item--mobile list-item">
+                <span class="list-item__icon material-symbols-rounded">call</span>
+                <a class="list-item__text" href="#">Contact</a>
+            </li>
+            <li class="nav-list-item--mobile">
+                <button class="main-button">
+                    <span class="main-button-text">Explore</span>
+                </button>
+            </li>
+        </ul>
+    </aside>
     <main>
         <section class="info-section-01"></section>
         <section class="benefit-section-02"></section>
