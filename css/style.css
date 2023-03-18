@@ -12,10 +12,7 @@
 
 .nav-container {
     position: relative;
-    display: -webkit-box; 
-    display: -ms-flexbox; 
-    display: -webkit-flex;
-    display: flex;
+    display: grid;
     align-items: center;
     padding: 10px 0px;
     width: 90%;
@@ -23,6 +20,7 @@
     margin: 0 auto;
     justify-content: space-between;
     background-color: inherit;
+    grid-auto-flow: column;
 }
 
 .logo {
@@ -34,6 +32,7 @@
     
     height: 50px;
     color: #326AEA;
+    cursor: pointer;
 }
 
 .logo-image {
@@ -52,16 +51,80 @@
 .logo-text span:nth-of-type(1) {
     font-size: 22px;
 }
+
 .logo-text span:nth-of-type(2) {
     font-size: 12px;
 }
 
-.nav-list--large {
-    display: block;
+.nav-list-item {
+    padding: 0px 30px;
+    font-size: 1.3rem;
 }
 
+
+
+.login-section {
+    display: none;
+}
+
+.nav-list--large {
+    display: none;
+    padding: 0px 40px;
+}
+
+.nav-list--mobile {
+    display: none;
+}
+
+.nav-button {
+    padding: 15px 30px;
+}
+
+
+
+
+
 @media all and (min-width: 700px) {
-    .nav-list--large {
-        display: none;
+
+    .nav-menu {
+        grid-column: 1;
     }
+
+    .login-section {
+        display: block;
+    }
+
+    .nav-container {
+        grid-template-columns: 40px 1fr 1fr;
+    }
+
+    .logo {
+        grid-column: 2;
+    }
+
+    .login-section {
+        grid-column: 3;
+        justify-self: flex-end;
+    }
+    
+}
+
+@media all and (min-width: 1000px) {
+
+    .nav-list--large {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none !important;
+    }
+
+    .nav-container {
+        grid-template-columns: unset;   
+    }
+
+    .nav-menu, .logo, .login-section {
+        grid-column: unset;
+    }
+
 }

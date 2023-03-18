@@ -20,13 +20,13 @@
 	--theme-gradient-2: hsl(5, 100%, 67%);
 
 
-     /* typo */
+     /* typography */
 	--typography-font-primary: 'Nunito Sans Light';
     --typography-font-primary-bold: 'Nunito Sans Black';
     --typography-font-secondary: 'Ubuntu Light';
     --typography-font-secondary-bold: 'Ubuntu Bold';
 
-
+    --border-radius: 25px;
 }
 
 .material-icons {
@@ -70,4 +70,52 @@
 
 .logo {
     font-family: var(--typography-font-primary);
+}
+
+.nav-list-item__text {
+    color: var(--theme-on-background);
+    font-family: var(--typography-font-primary-bold);
+}
+
+.list--flex {
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.primary-button, .secondary-button {
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+}
+
+.primary-button {
+    color: var(--theme-on-primary);
+    background-color: var(--theme-primary);
+}
+
+.secondary-button {
+    color: var(--theme-primary);
+    background-color: var(--theme-background-1);
+    border: 1px solid var(--theme-primary);
+}   
+
+.primary-button-text, .secondary-button-text {
+    font-family: var(--typography-font-secondary-bold);
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
 }
