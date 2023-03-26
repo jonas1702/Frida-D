@@ -61,6 +61,79 @@
     font-size: 1.3rem;
 }
 
+.hamburger-menu {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 49px;
+    width: 55px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.hamburger-menu input {
+    position: absolute;
+    width: 55px;
+    height: 49px;
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 2; 
+    -webkit-touch-callout: none;
+}
+
+.hamburger-menu span {
+    display: block;
+    position: relative;
+    height: 2px;
+}
+
+.hamburger-menu .span1 {
+    width: 42px;    
+    margin-top: 10px;
+    background: #326AEA;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s ease;
+}
+
+.hamburger-menu .span {
+    width: 55px;
+    margin-top: 10px;
+    background: #326AEA;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s ease;
+  
+}
+
+.hamburger-menu span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.hamburger-menu span:nth-last-child(3) {
+    transform-origin: 0% 100%;
+}
+
+.hamburger-menu input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    -webkit-transform: rotate(45deg) translate(-2px, -1px);
+    -ms-transform: rotate(45deg) translate(-2px, -1px);
+}
+
+.hamburger-menu input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+    -ms-transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.hamburger-menu input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+    -webkit-transform: rotate(-45deg) translate(0, -1px);
+    -ms-transform: rotate(-45deg) translate(0, -1px);
+}
+
 
 
 .login-section {
@@ -78,6 +151,14 @@
 
 .nav-button {
     padding: 15px 30px;
+}
+
+.primary-button {
+    margin: 0px 5px 0px 0px;
+}
+
+.secondary-button {
+    margin: 0px 0px 0px 5px
 }
 
 
