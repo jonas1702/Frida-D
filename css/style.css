@@ -4,3 +4,19 @@
     padding: 0;
 }
 
+.section {
+    width: 90%;
+    max-width: 1100px;
+}
+
+.info-section-01 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.svg {
+    width: 500px;
+    margin: 0 auto;
+}
