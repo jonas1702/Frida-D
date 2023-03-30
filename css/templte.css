@@ -6,6 +6,7 @@
     /* colors */
 	--theme-background-1: hsl(0, 0%, 100%);
     --theme-backround-2: hsl(0, 0%, 99%);
+    --theme-accent-background: hsl(345, 100%, 92%);
 
     --theme-on-background: hsl(224, 34%, 26%);
 	
