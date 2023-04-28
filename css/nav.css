@@ -50,7 +50,7 @@
     font-size: 12px;
 }
 
-.nav-list-item {
+.nav-list-item--large {
     padding: 0px 30px;
     font-size: 1.3rem;
 }
@@ -153,6 +153,11 @@
 
 .secondary-button {
     margin: 0px 0px 0px 5px
+}
+
+.nav-list-item--mobile {
+    padding: 10px 0px;
+    font-size: 1.4rem;
 }
 
 

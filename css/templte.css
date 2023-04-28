@@ -5,8 +5,9 @@
 
     /* colors */
 	--theme-background-1: hsl(0, 0%, 100%);
-    --theme-backround-2: hsl(0, 0%, 99%);
-    --theme-accent-background: hsl(345, 100%, 92%);
+    --theme-background-2: hsl(0, 0%, 99%);
+    --theme-background-accent-1: hsl(345, 100%, 92%);
+    --theme-background-accent-2: hsl(220, 14%, 91%);
 
     --theme-on-background: hsl(224, 34%, 26%);
 	
@@ -29,6 +30,7 @@
     --typography-font-secondary-bold: 'Ubuntu Bold';
 
     --border-radius: 25px;
+    --border-radius-large: 25px;
 }
 
 .material-icons {
@@ -64,6 +66,7 @@
 .text {
     color: var(--theme-on-background);
     font-family: var(--typography-font-primary);
+    font-size: 1.25rem;
 }
 
 .nav {
@@ -77,6 +80,10 @@
 .nav-list-item__text {
     color: var(--theme-on-background);
     font-family: var(--typography-font-primary-bold);
+}
+
+.list-item {
+    position: inherit;
 }
 
 .list--flex {
