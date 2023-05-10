@@ -11,6 +11,11 @@
     margin: auto;
 }
 
+.info-section-01 {
+    display: flex;
+    flex-direction: column;
+}
+
 .info-section-heading {
     display: flex;
     flex-direction: column;
@@ -33,13 +38,18 @@
 }
 
 .info-section-heading-frida {
-    color: var(--theme-gradient-1);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
     background-color: var(--theme-background-1);
+    width: min-content;
+}
+
+.info-section-heading-frida-text {
+    color: var(--theme-gradient-1);
     font-size: 8.5rem;
     font-family: var(--typography-font-primary-bold);
     line-height: 8.5rem;
-    z-index: 1;
-    width: min-content;
 }
 
 .info-section-text {
@@ -48,6 +58,15 @@
 
 .section-button {
     padding: 15px 70px;
+}
+
+.info-section-heading--desktop {
+    display: none;
+    width: 80%;
+}
+
+.info-section-container {
+    display: block;
 }
 
 
@@ -68,13 +87,14 @@
 }
 
 .info-section-card-heading {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .info-section-card-tag {
     width: min-content;
-    padding: 0px 35px;
-    line-height: 1.5rem;
+    padding: 0px 20px;
+    line-height: 1.2rem;
+    font-size: .8rem !important;
     margin: 20px 0px;
     color: var(--theme-gradient-1) !important;
     border: 2px solid var(--theme-gradient-1);
@@ -89,11 +109,12 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 480px;
+    width: 120%;
+    max-width: 480px;
 }
 
 @media all and (min-width: 550px) {
-    .info-section-heading {
+    .info-section-heading-frida {
         flex-direction: row;
     }
 
@@ -104,8 +125,47 @@
 }
 
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 750px) {
 
+    .info-section-01 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info-section-heading {
+        padding: 0px 35px !important;
+        height: min-content;
+        flex-grow: 1;
+        width: 70%;
+        margin: 0px 30px 0px 0px;
+    }
+
+    .info-section-heading-frida-text {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    .info-section-heading::after {
+        height: 100%;
+        left: 0px;
+        top: 50px;
+        width: 100% !important;
+        transform: none;
+    }
+
+    .info-section-heading--desktop {
+        display: block;
+    }
+
+    .info-section-container {
+        display: none;
+    }
+
+    .info-section-card {
+        width: 300px;
+        margin: 0px;
+        flex-grow: 0;
+    }
 }
 
 @media all and (min-width: 1000px) {
