@@ -18,6 +18,7 @@
 	--theme-accent-1: hsl(244, 88%, 67%);
 	--theme-accent-2: hsl(175, 76%, 52%);
     --theme-accent-3: hsl(314, 100%, 77%);
+    --theme-accent-4: hsl(270, 73%, 66%);
 	
 	--theme-gradient-1: hsl(337, 63%, 48%);
 	--theme-gradient-2: hsl(5, 100%, 67%);
@@ -29,8 +30,8 @@
     --typography-font-secondary: 'Ubuntu Light';
     --typography-font-secondary-bold: 'Ubuntu Bold';
 
-    --border-radius: 25px;
-    --border-radius-large: 25px;
+    --border-radius: 24px;
+    --border-radius-large: 50px;
 }
 
 .material-icons {
@@ -66,7 +67,7 @@
 .text {
     color: var(--theme-on-background);
     font-family: var(--typography-font-primary);
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 .nav {
@@ -92,27 +93,6 @@
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
-}
-
-.primary-button, .secondary-button {
-    border-radius: var(--border-radius);
-    outline: none;
-    border: none;
-}
-
-.primary-button {
-    color: var(--theme-on-primary);
-    background-color: var(--theme-primary);
-}
-
-.secondary-button {
-    color: var(--theme-primary);
-    background-color: var(--theme-background-1);
-    border: 1px solid var(--theme-primary);
-}   
-
-.primary-button-text, .secondary-button-text {
-    font-family: var(--typography-font-secondary-bold);
 }
 
 

@@ -16,6 +16,14 @@
     flex-direction: column;
 }
 
+.info-section-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 100%;
+}
+
 .info-section-heading {
     display: flex;
     flex-direction: column;
@@ -56,16 +64,17 @@
     padding: 30px 0px 30px 0px;
 }
 
-.section-button {
-    padding: 15px 70px;
+.info-section-text-large {
+    width: 100%;
+    padding: 60px 0px 0px 0px;
 }
 
 .info-section-heading--desktop {
     display: none;
-    width: 80%;
+    width: 90%;
 }
 
-.info-section-container {
+.info-section-heading--mobile {
     display: block;
 }
 
@@ -80,7 +89,7 @@
     max-width: 400px;
     height: 600px;
     margin: 50px auto;
-    padding: 30px;
+    padding: 40px;
     
     background-color: var(--theme-background-accent-2);
     border-radius: var(--border-radius-large);
@@ -92,6 +101,7 @@
 
 .info-section-card-tag {
     width: min-content;
+    cursor: pointer;
     padding: 0px 20px;
     line-height: 1.2rem;
     font-size: .8rem !important;
@@ -132,12 +142,15 @@
         justify-content: space-between;
     }
 
+    .info-section-container {
+        flex-grow: 1;
+        width: 70%;
+    }
+
     .info-section-heading {
         padding: 0px 35px !important;
         height: min-content;
-        flex-grow: 1;
-        width: 70%;
-        margin: 0px 30px 0px 0px;
+        margin: 0px 30px 50px 0px;
     }
 
     .info-section-heading-frida-text {
@@ -157,14 +170,18 @@
         display: block;
     }
 
-    .info-section-container {
+    .info-section-heading--mobile {
         display: none;
     }
 
     .info-section-card {
         width: 300px;
-        margin: 0px;
+        margin: 45px 0px 0px 0px;
         flex-grow: 0;
+    }
+
+    .info-section-text-large {
+        width: 90%;
     }
 }
 

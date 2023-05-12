@@ -1,0 +1,87 @@
+
+
+.button, .icon-button {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    z-index: 1;
+}
+
+.icon-button {
+    width: 40px;
+    border-radius: 50% !important;
+}
+
+.button {
+    border-radius: var(--border-radius);
+    
+    padding: 12px 20px;
+}
+
+.primary-button {
+    color: var(--theme-on-primary);
+    background-color: var(--theme-primary);
+}
+
+.secondary-button {
+    outline: 1px solid var(--theme-primary);
+    outline-offset: -1px !important;
+    color: var(--theme-primary);
+    background-color: var(--theme-background-1);
+}
+
+.button-text {
+    position: relative;
+    padding: 8px 25px;
+    z-index: 1;
+
+    font-family: var(--typography-font-secondary-bold);
+}
+
+.primary-button:nth-child(1) {
+    color: var(--theme-on-primary);
+}
+
+.secondary-button:nth-child(1) {
+    color: var(--theme-on-primary);
+}
+
+.button::after, .icon-button::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--theme-primary);
+    border-radius: 50%;
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    transition: all .3s ease;
+}
+
+/* check for none hover devices */
+.button:active, .icon-button:active {
+    outline: none;
+}
+
+@media all and (hover:hover) {
+    .button:hover::after, .icon-button:hover::after{
+        width: 110% !important;
+        padding-bottom: 110% !important;
+    }
+    
+    .button:hover, .icon-button:hover{
+        outline: none;
+    }
+    
+    .button:hover .button-text, .icon-button:hover .button-text{
+        color: var(--theme-on-primary) !important;
+        transition: all .3s ease;
+    }
+    
+    .button:active::after, .icon-button:active::after {
+        background-color: var(--theme-accent-4) !important;
+    }
+}
