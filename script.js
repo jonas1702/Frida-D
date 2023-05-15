@@ -12,3 +12,6 @@ menu.addEventListener('click', () => {
     }
     
 })
+
+
+/* scroll */
