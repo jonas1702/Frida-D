@@ -14,7 +14,7 @@
     position: relative;
     display: grid;
     align-items: center;
-    padding: 10px 0px;
+    padding: 20px 0px;
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
@@ -135,6 +135,21 @@
 }
 
 
+.nav-list-item--active > a {
+    color: var(--theme-on-background);
+    font-family: var(--typography-font-secondary-bold);
+}
+
+.nav-list-item > a {
+    color: var(--theme-on-background);
+    opacity: .5;
+    font-family: var(--typography-font-secondary-bold);
+}
+
+.nav-list-item:hover > a {
+    opacity: 1;
+}
+
 
 .login-section {
     display: none;
@@ -149,11 +164,11 @@
     display: none;
 }
 
-.primary-button {
+.nav-primary-button {
     margin: 0px 5px 0px 0px;
 }
 
-.secondary-button {
+.nav-secondary-button {
     margin: 0px 0px 0px 5px
 }
 

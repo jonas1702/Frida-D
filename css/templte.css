@@ -5,7 +5,7 @@
 
     /* colors */
 	--theme-background-1: hsl(0, 0%, 100%);
-    --theme-background-2: hsl(0, 0%, 99%);
+    --theme-background-2: hsl(0, 0%, 50%);
     --theme-background-accent-1: hsl(345, 100%, 92%);
     --theme-background-accent-2: hsl(220, 14%, 91%);
 
@@ -81,11 +81,6 @@
 
 .logo {
     font-family: var(--typography-font-primary);
-}
-
-.nav-list-item__text {
-    color: var(--theme-on-background);
-    font-family: var(--typography-font-primary-bold);
 }
 
 .list-item {
