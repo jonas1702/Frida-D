@@ -185,7 +185,7 @@
     }
 
     .login-section {
-        display: block;
+        display: flex;
     }
 
     .nav-container {

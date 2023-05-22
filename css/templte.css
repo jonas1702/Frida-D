@@ -4,7 +4,7 @@
 
 
     /* colors */
-	--theme-background-1: hsl(0, 0%, 100%);
+	--theme-background-1: hsl(0, 0%, 99%);
     --theme-background-2: hsl(0, 0%, 50%);
     --theme-background-accent-1: hsl(345, 100%, 92%);
     --theme-background-accent-2: hsl(220, 14%, 91%);
@@ -34,6 +34,17 @@
     --border-radius-large: 50px;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    background-color: var(--theme-background-1);
+}
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -59,6 +70,10 @@
     font-feature-settings: 'liga';
 }
 
+.material-icons-outlined.md-18 { font-size: 18px; }
+.material-icons-outlined.md-24 { font-size: 24px; }
+.material-icons-outlined.md-36 { font-size: 36px; }
+.material-icons-outlined.md-48 { font-size: 48px; }
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
@@ -107,4 +122,10 @@ ul {
 
 button {
     cursor: pointer;
+}
+
+@media all and (min-width: 750px) {
+    html {
+        font-size: calc(12px + 0.390625vw);
+    }
 }

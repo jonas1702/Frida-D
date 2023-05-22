@@ -1,17 +1,8 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: calc(12px + 0.390625vw);
-}
-
 .section {
+    position: relative;
     width: 85%;
     max-width: 1000px;
-    padding: 60px 0px 0px 0px;
+    padding: 40px 0px 80px 0px;
     margin: auto;
 }
 
@@ -166,6 +157,10 @@ html {
     .info-section-card-text {
         padding-bottom: calc(-20vw + 250px);
     }
+
+    .info-section-heading-frida-text:nth-child(2) {
+        text-transform: lowercase;
+    }
 }
 
 @media all and (min-width: 750px) {
@@ -237,29 +232,17 @@ html {
 
 
 .benefit-section-02 {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-/* .benefit-section-02::after {
-    content: '';
-    border: 2px solid var(--theme-primary);
-
-    position: absolute;
-    width: 200%;
-    height: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-} */
-
 .benefit-section-item {
     display: grid;
-    grid-template-columns: 80px 60vw;
+    grid-template-columns: 90px 40vw;
     grid-template-rows: 40px auto;
-    column-gap: 10px;
+    column-gap: 15px;
+    row-gap: 10px;
     justify-content: center;
     padding: 30px 0px;
 }
@@ -269,8 +252,8 @@ html {
     
     background-color: var(--theme-primary);
     opacity: .5;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 
     grid-row: 1 / 2;
@@ -297,30 +280,119 @@ html {
     grid-column: 2;
 }
 
-
-
-@media all and (min-width: 550px) {
-
-}
-
 @media all and (min-width: 750px) {
     .benefit-section-02 {
         flex-direction: row;
     }
 
     .benefit-section-item {
-        grid-template-columns: 100px 250px;
+        grid-template-columns: 80px 25vw;
         column-gap: 20px;
         padding: 0px;
     }
 
     .benefit-section-item-image {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 }
 
 
+
+/* section 03 */
+
 .contact-section-03 {
-    height: 2000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section-info {
+    position: inherit;
+}
+
+.contact-section-info-heading {
+    font-size: 2.2rem;
+    width: 80%;
+    padding: 0px 0px 20px 0px;
+}
+
+.contact-section-info-content {
+    flex-direction: column;
+    display: none;
+}
+
+.contact-section-info-content-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-section-info-content-icon {
+    color: var(--theme-primary);
+}
+
+.contact-section-info-content-text {
+    font-family: var(--typography-font-secondary-bold) !important;
+}
+
+.contact-section-form-text {
+    font-family: var(--typography-font-secondary-bold);
+    font-size: 1rem;
+    color: var(--theme-on-background);
+}
+
+.contact-section-form-field {
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--theme-background-2);
+    border-radius: 15px;
+    height: 40px;
+}
+
+
+.contact-section-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 30px;
+    border: 2px solid var(--theme-primary);
+    border-radius: var(--border-radius-large);
+}
+
+.form-first-name {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.form-last-name {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.form-email {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.form-message {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+
+.form-button {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+
+@media all and (min-width: 750px) {
+    .contact-section-03 {
+        flex-direction: row;
+    }
+
+    .contact-section-info-content {
+        display: flex;
+    }
 }
