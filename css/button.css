@@ -15,8 +15,9 @@
 
 .button {
     border-radius: var(--border-radius);
-    
-    padding: 12px 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 12px 35px;
 }
 
 .primary-button {
@@ -33,9 +34,8 @@
 
 .button-text {
     position: relative;
-    padding: 8px 25px;
     z-index: 1;
-
+    white-space: nowrap;
     font-family: var(--typography-font-secondary-bold);
 }
 

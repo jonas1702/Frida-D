@@ -239,7 +239,7 @@
 
 .benefit-section-item {
     display: grid;
-    grid-template-columns: 90px 40vw;
+    grid-template-columns: 90px 70%;
     grid-template-rows: 40px auto;
     column-gap: 15px;
     row-gap: 10px;
@@ -278,6 +278,7 @@
 .benefit-section-item-text {
     grid-row: 2;
     grid-column: 2;
+    max-width: 250px;
 }
 
 @media all and (min-width: 750px) {
@@ -286,14 +287,14 @@
     }
 
     .benefit-section-item {
-        grid-template-columns: 80px 25vw;
+        grid-template-columns: 100px 25vw;
         column-gap: 20px;
         padding: 0px;
     }
 
     .benefit-section-item-image {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -308,6 +309,8 @@
 
 .contact-section-info {
     position: inherit;
+    padding: 0px 0px 50px 0px;
+    max-width: 500px;
 }
 
 .contact-section-info-heading {
@@ -335,6 +338,12 @@
     font-family: var(--typography-font-secondary-bold) !important;
 }
 
+.contact-section-form-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
 .contact-section-form-text {
     font-family: var(--typography-font-secondary-bold);
     font-size: 1rem;
@@ -343,10 +352,29 @@
 
 .contact-section-form-field {
     background: transparent;
+    font-family: var(--typography-font-primary);
     outline: none;
     border: 1px solid var(--theme-background-2);
     border-radius: 15px;
     height: 40px;
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    padding: 5px 10px;
+    font-size: .9rem;
+    color: var(--theme-on-background);
+}
+
+.contact-section-form-text::after {
+    content: '*';
+    color: var(--theme-gradient-1);
+    font-family: inherit;
+    font-size: inherit;
+    display: none;
+}
+
+.textarea {
+    height: 100%;
 }
 
 
@@ -355,8 +383,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 4fr 1fr;
     column-gap: 20px;
-    row-gap: 10px;
-    padding: 30px;
+    row-gap: 15px;
+    padding: 40px;
     border: 2px solid var(--theme-primary);
     border-radius: var(--border-radius-large);
 }
@@ -372,12 +400,12 @@
 }
 
 .form-email {
-    grid-column: 1 / 2;
+    grid-column: 1 / span 2;
     grid-row: 2;
 }
 
 .form-message {
-    grid-column: 1 / 2;
+    grid-column: 1 / span 2;
     grid-row: 3;
 }
 
@@ -395,4 +423,9 @@
     .contact-section-info-content {
         display: flex;
     }
+
+    .contact-section-info {
+        padding: 0px;
+    }
+    
 }
