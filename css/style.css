@@ -287,7 +287,7 @@
     }
 
     .benefit-section-item {
-        grid-template-columns: 100px 25vw;
+        grid-template-columns: 100px 70%;
         column-gap: 20px;
         padding: 0px;
     }
@@ -310,7 +310,7 @@
 .contact-section-info {
     position: inherit;
     padding: 0px 0px 50px 0px;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 .contact-section-info-heading {
@@ -322,12 +322,20 @@
 .contact-section-info-content {
     flex-direction: column;
     display: none;
+    padding-top: 40px;
+    padding-left: 20px;
 }
 
 .contact-section-info-content-item {
     display: flex;
     flex-direction: row;
     align-items: center;
+    column-gap: 15px;
+    row-gap: 10px;
+}
+
+.contact-section-info-text {
+    width: 70%;
 }
 
 .contact-section-info-content-icon {
@@ -371,6 +379,14 @@
     font-family: inherit;
     font-size: inherit;
     display: none;
+}
+
+.contact-section-form-field:autofill {
+    background: transparent !important;
+}
+
+.contact-section-form-field:-webkit-autofill {
+    background: transparent !important;
 }
 
 .textarea {
