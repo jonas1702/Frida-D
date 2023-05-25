@@ -82,6 +82,6 @@
     }
     
     .button:active::after, .icon-button:active::after {
-        background-color: var(--theme-accent-4) !important;
+        background-color: var(--theme-gradient-1) !important;
     }
 }
