@@ -29,14 +29,12 @@
     display: -ms-flexbox; 
     display: -webkit-flex;
     display: flex;
-    
+    flex-direction: row;
+    column-gap: 10px;
+
     height: 50px;
     color: #326AEA;
     cursor: pointer;
-}
-
-.logo-image {
-    margin-right: 5px;
 }
 
 .logo-text {
