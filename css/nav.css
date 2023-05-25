@@ -58,7 +58,7 @@
 
 .nav-list-item--large {
     padding: 0px 30px;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
 }
 
 .hamburger-menu {
@@ -147,6 +147,10 @@
 }
 
 .nav-list-item:hover > a {
+    text-decoration: overline;
+}
+
+.nav-list-item:active > a {
     opacity: 1;
 }
 

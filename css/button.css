@@ -6,6 +6,7 @@
     overflow: hidden;
     border: none;
     z-index: 1;
+    transition: all .3s ease;
 }
 
 .icon-button {
@@ -17,12 +18,13 @@
     border-radius: var(--border-radius);
     width: fit-content;
     height: fit-content;
-    padding: 12px 35px;
+    padding: 12px 30px;
 }
 
 .primary-button {
-    color: var(--theme-on-primary);
-    background-color: var(--theme-primary);
+    color: var(--theme-primary) !important;
+    background-color: transparent;
+    outline: none !important;
 }
 
 .secondary-button {
@@ -39,14 +41,6 @@
     font-family: var(--typography-font-secondary-bold);
 }
 
-.primary-button:nth-child(1) {
-    color: var(--theme-on-primary);
-}
-
-.secondary-button:nth-child(1) {
-    color: var(--theme-on-primary);
-}
-
 .button::after, .icon-button::after {
     content: '';
     position: absolute;
@@ -61,13 +55,14 @@
     transition: all .3s ease;
 }
 
-/* check for none hover devices */
 .button:active, .icon-button:active {
     outline: none;
 }
 
+/* check for none hover devices */
+
 @media all and (hover:hover) {
-    .button:hover::after, .icon-button:hover::after{
+    .secondary-button:hover::after, .icon-button:hover::after{
         width: 110% !important;
         padding-bottom: 110% !important;
     }
@@ -76,12 +71,20 @@
         outline: none;
     }
     
-    .button:hover .button-text, .icon-button:hover .button-text{
+    .secondary-button:hover .button-text, .icon-button:hover .button-text{
         color: var(--theme-on-primary) !important;
-        transition: all .3s ease;
     }
     
-    .button:active::after, .icon-button:active::after {
+    .secondary-button:active::after, .icon-button:active::after {
         background-color: var(--theme-gradient-1) !important;
+    }
+
+    .primary-button:hover {
+        background-color: var(--theme-primary-very-light);
+    }
+
+    .primary-button:active {
+        background-color: var(--theme-primary);
+        color: var(--theme-on-primary) !important;
     }
 }

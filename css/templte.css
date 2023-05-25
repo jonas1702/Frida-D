@@ -14,6 +14,7 @@
 	
 	--theme-primary: hsl(222, 81%, 56%);
     --theme-primary-light: hsl(222, 81%, 56%, 50%);
+    --theme-primary-very-light: hsl(222, 81%, 56%, 20%);
 	--theme-on-primary: hsl(0, 0%, 100%);
 
 	
@@ -94,7 +95,7 @@ html {
 .text {
     color: var(--theme-on-background);
     font-family: var(--typography-font-primary);
-    font-size: 1.15rem;
+    font-size: 1.1rem;
 }
 
 .nav {
