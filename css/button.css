@@ -22,9 +22,8 @@
 }
 
 .primary-button {
-    color: var(--theme-primary) !important;
-    background-color: transparent;
-    outline: none !important;
+    color: var(--theme-on-primary);
+    background-color: var(--theme-primary);
 }
 
 .secondary-button {
@@ -39,9 +38,10 @@
     z-index: 1;
     white-space: nowrap;
     font-family: var(--typography-font-secondary-bold);
+    font-size: .85rem;
 }
 
-.button::after, .icon-button::after {
+.secondary-button::after, .icon-button::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -75,16 +75,26 @@
         color: var(--theme-on-primary) !important;
     }
     
-    .secondary-button:active::after, .icon-button:active::after {
+    .secondary-button:active::after, .primary-button:active, .icon-button:active::after {
         background-color: var(--theme-gradient-1) !important;
     }
+}
 
-    .primary-button:hover {
+/* nav-button */
+
+.nav-primary-button {
+    color: var(--theme-primary);
+    background-color: transparent;
+    outline: none;
+}
+
+@media all and (hover:hover) {
+    .nav-primary-button:hover {
         background-color: var(--theme-primary-very-light);
     }
 
-    .primary-button:active {
+    .nav-primary-button:active {
         background-color: var(--theme-primary);
-        color: var(--theme-on-primary) !important;
+        color: var(--theme-on-primary);
     }
 }

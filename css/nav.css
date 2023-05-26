@@ -15,10 +15,9 @@
     display: grid;
     align-items: center;
     padding: 20px 0px;
-    width: 90%;
-    max-width: 1100px;
+    width: 85%;
+    max-width: 1000px;
     margin: 0 auto;
-    justify-content: space-between;
     background-color: inherit;
     grid-auto-flow: column;
 }
@@ -52,11 +51,6 @@
 
 .logo-text span:nth-of-type(2) {
     font-size: 12px;
-}
-
-.nav-list-item--large {
-    padding: 0px 30px;
-    font-size: 1.15rem;
 }
 
 .hamburger-menu {
@@ -132,24 +126,26 @@
     -ms-transform: rotate(-45deg) translate(0, -1px);
 }
 
+.nav-list-item--large {
+    padding: 0px 30px;
+    font-size: .95rem;
+    font-family: var(--typography-font-secondary-bold);
+}
 
 .nav-list-item--active > a {
-    color: var(--theme-on-background);
-    font-family: var(--typography-font-secondary-bold);
+    color: var(--theme-gradient-1);
 }
 
 .nav-list-item > a {
     color: var(--theme-on-background);
-    opacity: .5;
-    font-family: var(--typography-font-secondary-bold);
 }
 
 .nav-list-item:hover > a {
-    text-decoration: overline;
+    text-decoration:underline;
 }
 
 .nav-list-item:active > a {
-    opacity: 1;
+    color: var(--theme-gradient-1);
 }
 
 
@@ -159,7 +155,6 @@
 
 .nav-list--large {
     display: none;
-    padding: 0px 40px;
 }
 
 .nav-list--mobile {
@@ -216,7 +211,7 @@
     }
 
     .nav-container {
-        grid-template-columns: unset;   
+        grid-template-columns: 220px 1fr 1fr;   
     }
 
     .nav-menu, .logo, .login-section {

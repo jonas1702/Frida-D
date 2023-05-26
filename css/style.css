@@ -176,14 +176,14 @@
     }
 
     .info-section-heading {
-        padding: 0px 35px !important;
+        padding: 0px 45px !important;
         height: min-content;
         margin: 0px 30px 50px 0px;
     }
 
     .info-section-heading-frida-text {
-        font-size: 6rem;
-        line-height: 7rem;
+        font-size: 5.5rem;
+        line-height: 4.5rem;
     }
 
     .info-section-heading::after {
@@ -235,7 +235,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    column-gap: 10px;
+    column-gap: 5vw;
+    max-width: 800px;
 }
 
 .benefit-section-item {
@@ -410,6 +411,8 @@
     grid-template-rows: 1fr 1fr 4fr 1fr;
     column-gap: 20px;
     row-gap: 15px;
+    width: 90%;
+    margin: 0 auto;
 
     /* gradient border */
     background: linear-gradient(white, white) padding-box,
@@ -509,6 +512,11 @@
 
     .contact-section-info {
         padding: 0px;
+    }
+
+    .contact-section-form {
+        width: auto;
+        margin: 0;
     }
     
 }
