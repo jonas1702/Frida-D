@@ -58,29 +58,43 @@
         </div>
     </header>
     <aside class="nav-list--mobile">
-        <ul class="nav-list-container">
-            <li class="nav-list-item--active nav-list-item--mobile list-item--active">
-                <span class="list-item__icon material-icons-round">home</span>
-                <a class="nav-list-item__text" href="#">Home</a>
-            </li>
-            <li class="nav-list-item nav-list-item--mobile list-item--active">
-                <span class="list-item__icon material-icons-round">person</span>
-                <a class="nav-list-item__text" href="#">About</a>
-            </li>
-            <li class="nav-list-item nav-list-item--mobile list-item--active">
-                <span class="list-item__icon material-icons-round">call</span>
-                <a class="nav-list-item__text" href="#">Contact</a>
-            </li>
-            <li class="nav-list-item nav-list-item--mobile">
-                <button class="primary-button button nav-button list-item" tabindex="0">
-                    <span class="button-text">Log in</span>
-                </button>
-                <button class="secondary-button button nav-button list-item" tabindex="0">
-                    <span class="button-text">Sign up</span>
-                </button>
-            </li>
-        </ul>
+        <div class="nav-list-mobile-container">
+            <img src="./images/mobilenav.svg" class="nav-list-svg--mobile">
+            <ul class="nav-list-container">
+                <li class="nav-list-item--active nav-list-item--mobile list-item--active">
+                    <span class="list-item__icon material-icons-round">home</span>
+                    <a class="nav-list-item__text" href="#">Home</a>
+                </li>
+                <li class="nav-list-item nav-list-item--mobile list-item--active">
+                    <span class="list-item__icon material-icons-round">person</span>
+                    <a class="nav-list-item__text" href="#">About</a>
+                </li>
+                <li class="nav-list-item nav-list-item--mobile list-item--active">
+                    <span class="list-item__icon material-icons-round">call</span>
+                    <a class="nav-list-item__text" href="#">Contact</a>
+                </li>
+                <li class="nav-list-item list-item--active">
+                    <div class="contact__small">
+                        <div class="contact__small-info">
+                            <div class="contact__small-info-text contact-text text">info@wktech.com</div>
+                            <div class="contact__small-info-bold contact-text text">+49 012 203937</div>
+                        </div>
+                        <div class="contact__small-adress contact-text text">Ostbordweg 203 <br>20212 Schenefeld</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="nav-list-footer--mobile">
+            <button class="button nav-primary-button nav-button list-item" tabindex="0">
+                <span class="button-text">Log in</span>
+            </button>
+            <button class="secondary-button button nav-button list-item" tabindex="0">
+                <span class="button-text">Sign up</span>
+            </button>
+        </div>
     </aside>
+    <div class="blur"></div>
     <main>
         <section class="section info-section-01">
             <div class="info-section-container">
@@ -92,7 +106,7 @@
                     
     
                     <div class="info-section-heading--desktop">
-                        <div class="info-section-text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic voluptate, atque odit explicabo deleniti accusantium aut sequi facilis neque officia praesentium iure inventore esse! Expedita.</div>
+                        <div class="info-section-text text">Lorem, ipsum dolor sit amet consectetur ad accusantium aut sequi facilis neque officia praesentium iure inventore esse! Expedita.</div>
                         <button class="primary-button button section-button" tabindex="0">
                             <span class="button-text">Do STH</span>
                         </button>
