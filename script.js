@@ -22,4 +22,14 @@ function handleSubmit() {
 }
 
 
-/* scroll */
+/* copy text */
+
+const copyElm = Array.from(document.querySelectorAll('.copyElm'))
+
+copyElm.forEach(element => {
+    element.addEventListener('click', () => {
+        let copyText = element.querySelector('.copyText')
+        navigator.clipboard.writeText(copyText.innerHTML);
+        alert("Copied the text: " + copyText.innerHTML);
+    })
+})

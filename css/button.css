@@ -24,6 +24,7 @@
 .primary-button {
     color: var(--theme-on-primary);
     background-color: var(--theme-primary);
+    padding: 12px 45px;
 }
 
 .secondary-button {

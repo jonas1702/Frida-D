@@ -91,21 +91,22 @@
 .card {
     position: relative;
     overflow: hidden;
-}
-
-.info-section-card {
     display: flex;
     flex-direction: column;
     width: 90%;
     margin: auto;
+
+    border-radius: var(--border-radius-large);
+}
+
+.info-section-card {
     margin-top: 50px;
     padding: 40px;
     
     background-color: var(--theme-background-accent-2);
-    border-radius: var(--border-radius-large);
 }
 
-.info-section-card-heading {
+.card-heading {
     font-size: 1.8rem;
 }
 
@@ -323,7 +324,6 @@
 
 .contact-section-info-heading {
     font-size: 2.2rem;
-    width: 80%;
     padding: 0px 0px 20px 0px;
 }
 
@@ -342,18 +342,17 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     align-items: center;
-    column-gap: 15px;
-    padding: 0px 15px;
+    column-gap: 20px;
+    padding: 12px 15px;
     width: fit-content;
     cursor: pointer;
     transform-origin: center;
+    border-radius: var(--border-radius);
+    transition: .1s ease;
 }
 
 .contact-section-info-content-item:hover {
     background-color: var(--theme-primary-light);
-    padding: 5px 15px;
-    border-radius: var(--border-radius);
-    transition: .1s ease;
 }
 
 .contact-section-info-content-item:hover .contact-section-info-content-copy {
@@ -361,9 +360,9 @@
 }
 
 .contact-section-info-content-copy {
-    position: relative;
-    background-color: var(--theme-background-3);
-    padding: 5px 10px;
+    position: absolute;
+    background-color: var(--theme-accent-3);
+    padding: 6px 13px;
     border-radius: 5px;
     font-family: var(--typography-font-secondary);
     font-size: .8rem;
@@ -371,6 +370,8 @@
     display: none;
     width: min-content;
     justify-self: end;
+
+    top: -30px;
 
     grid-column: 2;
     grid-row: 1;
@@ -383,13 +384,9 @@
     height: 0;
     border: 5px solid transparent;
     border-bottom: 0;
-    border-top: 10px solid var(--theme-background-3);
+    border-top: 10px solid var(--theme-accent-3);
     bottom: -8px;
     left: 10px;
-}
-
-.contact-section-info-text {
-    width: 70%;
 }
 
 .contact-section-info-content-icon {
@@ -505,6 +502,7 @@
 @media all and (min-width: 750px) {
     .contact-section-03 {
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .contact-section-info-content {
@@ -512,12 +510,43 @@
     }
 
     .contact-section-info {
-        padding: 0px;
+        padding: 0px 30px 0px 0px;
+        width: 70%;
     }
+
+    /* .contact-section-info-heading {
+        width: 100%;
+    }
+
+    .contact-section-info-text {
+        width: 100%;
+    } */
 
     .contact-section-form {
         width: auto;
         margin: 0;
+        max-width: 450px;
     }
     
+}
+
+/* section-04 */
+
+.pricing-section-04 {
+    position: relative;
+}
+
+.pricing-section-card {
+    padding: 40px;
+}
+
+.pricing-section-card > *,  .pricing-section-card > * > *{
+    
+    color: var(--theme-on-primary) !important;
+}
+
+
+
+.primary-card {
+    background-color: var(--theme-on-background);
 }
