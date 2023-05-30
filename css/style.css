@@ -467,7 +467,7 @@
     background: transparent;
     font-family: var(--typography-font-primary);
     outline: none;
-    border: 1px solid var(--theme-background-2);
+    border: 1px solid var(--theme-background-4);
     border-radius: 15px;
     height: 40px;
     width: 100%;
@@ -572,18 +572,31 @@
 
 .pricing-section-card {
     padding: 60px 30px 40px 30px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .card-subheading {
     font-size: .8rem !important;
 }
 
+.card-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-list-item__text {
+    font-size: 1.05rem !important;
+}
+
+
 .pricing-section-card-list {
     display: flex;
     flex-direction: column;
     padding: 30px 0px 80px 0px;
     gap: 10px;
-    list-style: inside;
 }
 
 .primary-card--large {
@@ -610,6 +623,7 @@
 
 .secondary-card--large {
     background-color: var(--theme-background-2) !important;
+    padding: 40px 30px;
 }
 
 .secondary-card--large > .card-heading {
@@ -630,7 +644,21 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: end;
-        gap: 20px;
+        gap: 3%;
+    }
+
+    .pricing-section-card {
+        max-width: none;
+        width: auto;
+    }
+
+    .primary-card--large {
+        width: 35%;
+        min-height: 460px;
+    }
+
+    .secondary-card--large {
+        padding: 40px 20px;
     }
     
 }
