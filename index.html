@@ -3,13 +3,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/templte.css">
     <link rel="stylesheet" href="css/button.css">
 
+    <link rel="preconnect" href="//www.wkstatic.de">
+    <script src="https://www.wkstatic.de/js/jquery-3.4.1.js"></script>
+
     <!-- tab browser icon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon_wunderkopf.svg">
+
+    <script src="https://code.wunderkopf.io/libs/util/iban.js"></script>
+
+     <!--  bundles -->
+     <link href="https://code.wunderkopf.io/libs/wkd/1.0.4/bundle.css" rel="stylesheet">
+     <script src="https://code.wunderkopf.io/libs/wkd/1.0.4/bundle.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" 
     rel="stylesheet">
@@ -178,7 +188,7 @@
                 </div>
             </div>  
 
-            <form action="submit" class="contact-section-form" action="javascript:handleSubmit()">
+            <form action="submit" class="contact-section-form" action="javascript:;" onsubmit="handleSubmit()">
                 <div class="contact-section-form-item form-first-name">
                     <div class="contact-section-form-text">First Name</div>
                     <input type="text" class="contact-section-form-field" name="first-name" placeholder="...">
@@ -201,6 +211,23 @@
             </form>
         </section>
         <section class="section pricing-section-04">
+            <div class="pricing-section-info">
+                <div class="pricing-section-info-heading heading">Choose your plan</div>
+                <div class="pricing-section-info-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere amet reiciendis, exercitationem doloribus nesciunt! Inventore excepturi atque assumenda optio.</div>
+                <div class="pricing-section-info-switch">
+
+                    <div class="wkd-form-field pricing-section-bool" data-wkd-auto-init="WkdFormField">
+                        <div class="wkd-switch wkd-switch--touch wkd-form-field__input" data-wkd-auto-init="WkdSwitch">
+                            <div class="wkd-switch__track"></div>
+                            <div class="wkd-switch__thumb-underlay">
+                                <div class="wkd-switch__thumb"></div>
+                                <input type="checkbox" class="wkd-switch__native-control" role="switch" aria-checked="false">
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
             <div class="pricing-section-card-container">
 
                 <div class="pricing-section-card secondary-card--large card">

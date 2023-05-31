@@ -93,7 +93,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin: auto;
 
     border-radius: var(--border-radius-large);
@@ -143,12 +143,15 @@
 }
 
 @media all and (min-width: 550px) {
+
+    .section {
+        width: 75%;
+    }
     .info-section-heading-frida {
         flex-direction: row;
     }
 
     .info-section-heading::after {
-        width: 70vw;
         max-width: 1000px;
     }
 
@@ -250,7 +253,7 @@
     justify-content: center;
     padding: 30px 0px;
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .benefit-section-item-image {
@@ -286,13 +289,35 @@
     grid-column: 2;
 }
 
-@media all and (min-width: 750px) {
+@media all and (min-width: 600px) {
     .benefit-section-02 {
         flex-direction: row;
     }
 
     .benefit-section-item {
+        grid-template-rows: 90px 40px auto;
+    }
+
+    .benefit-section-item-image {
+        grid-row: 1;
+    }
+
+    .benefit-section-item-heading {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+
+    .benefit-section-item-text {
+        grid-row: 3;
+        grid-column: 1 / span 2;
+    }
+    
+}
+
+@media all and (min-width: 750px) {
+    .benefit-section-item {
         grid-template-columns: 100px auto;
+        grid-template-rows: 40px auto;
         column-gap: 20px;
         padding: 0px;
         margin: 0px;
@@ -301,6 +326,20 @@
     .benefit-section-item-image {
         width: 100px;
         height: 100px;
+    }
+
+    .benefit-section-item-image {
+        grid-row: 1 / 2;
+    }
+
+    .benefit-section-item-heading {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .benefit-section-item-text {
+        grid-row: 2;
+        grid-column: 2;
     }
 }
 
@@ -409,7 +448,6 @@
     grid-template-rows: 1fr 1fr 1fr 4fr 1fr;
     column-gap: 20px;
     row-gap: 15px;
-    width: 90%;
     margin: 0 auto;
 
     /* gradient border */
@@ -563,6 +601,23 @@
     position: relative;
 }
 
+.pricing-section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 50px 0px;
+}
+
+.pricing-section-info-heading {
+    font-size: 2rem;
+    margin: 20px 0px;
+}
+
+.pricing-section-info-text {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
 .pricing-section-card-container {
     display: flex;
     flex-direction: column;
@@ -653,7 +708,6 @@
     }
 
     .primary-card--large {
-        width: 35%;
         min-height: 460px;
     }
 

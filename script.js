@@ -1,3 +1,5 @@
+wkd.autoInit();
+
 const menu = document.querySelector('.hamburger-menu')
 const blur = document.querySelector('.blur')
 const mobile_expand = document.querySelector('.nav-list--mobile')
