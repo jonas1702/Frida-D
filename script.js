@@ -35,3 +35,56 @@ copyElm.forEach(element => {
         alert("Copied the text: " + copyText.innerHTML);
     })
 })
+
+
+/* switch */
+const monthlyPricing = {
+    card1: '11 $ / m',
+    card2: '22 $ / m',
+    card3: '33 $ / m'
+}
+
+const yearlyPricing = {
+    card1: '110 $ / y',
+    card2: '230 $ / y',
+    card3: '350 $ / y'
+}
+
+const switchBtn = document.querySelector('.pricing-switch')
+
+const label1 = document.querySelector('#label1')
+const label2 = document.querySelector('#label2')
+
+const cards = Array.from(document.querySelectorAll('.pricing-section-card'))
+
+function interpretCheckbox(checkbox) {
+    if (checkbox.checked) {
+        label1.classList.remove('pricing-section-switch-label--active')
+        label1.classList.add('pricing-section-switch-label')
+        label2.classList.remove('pricing-section-switch-label')
+        label2.classList.add('pricing-section-switch-label--active')
+        for (i = 0; i < cards.length; i++) {
+            let cardText = cards[i].querySelector('.card-heading')
+            cardText.innerHTML = Object.values(yearlyPricing)[i]
+        }
+    }
+
+    if (!checkbox.checked) {
+        label1.classList.remove('pricing-section-switch-label')
+        label2.classList.remove('pricing-section-switch-label--active')
+        label1.classList.add('pricing-section-switch-label--active')
+        label2.classList.add('pricing-section-switch-label')
+
+        for (i = 0; i < cards.length; i++) {
+            let cardText = cards[i].querySelector('.card-heading')
+            cardText.innerHTML = Object.values(monthlyPricing)[i]
+        }
+    }
+}
+
+switchBtn.addEventListener('click', () => {
+    interpretCheckbox(switchBtn)
+})
+
+
+document.querySelector('.footer-icon-button').addEventListener('click', () => window.scrollTo(0, 0));

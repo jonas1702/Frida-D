@@ -214,25 +214,23 @@
             <div class="pricing-section-info">
                 <div class="pricing-section-info-heading heading">Choose your plan</div>
                 <div class="pricing-section-info-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere amet reiciendis, exercitationem doloribus nesciunt! Inventore excepturi atque assumenda optio.</div>
-                <div class="pricing-section-info-switch">
-
-                    <div class="wkd-form-field pricing-section-bool" data-wkd-auto-init="WkdFormField">
-                        <div class="wkd-switch wkd-switch--touch wkd-form-field__input" data-wkd-auto-init="WkdSwitch">
-                            <div class="wkd-switch__track"></div>
-                            <div class="wkd-switch__thumb-underlay">
-                                <div class="wkd-switch__thumb"></div>
-                                <input type="checkbox" class="wkd-switch__native-control" role="switch" aria-checked="false">
-                            </div>
+                <form class="wkd-form-field pricing-section-bool basic-switch" id="basic-switch" data-wkd-auto-init="WkdFormField">
+                    <label class="switch-label pricing-section-switch-label--active" id="label1" for="basic-switch">monthly</label>
+                    <div class="wkd-switch wkd-switch--touch wkd-form-field__input" data-wkd-auto-init="WkdSwitch">
+                        <div class="wkd-switch__track"></div>
+                        <div class="wkd-switch__thumb-underlay">
+                            <div class="wkd-switch__thumb"></div>
+                            <input type="checkbox" class="wkd-switch__native-control pricing-switch" role="switch" aria-checked="false">
                         </div>
-                    </div> 
-
-                </div>
+                    </div>
+                    <label class="switch-label pricing-section-switch-label" id="label2" for="basic-switch">yearly</label>
+                </form> 
             </div>
             <div class="pricing-section-card-container">
 
                 <div class="pricing-section-card secondary-card--large card">
                     <div class="secondary-card card-subheading text">Lorem Ipsum cadet est</div>
-                    <div class="secondary-card card-heading heading">22$ / m</div>
+                    <div class="secondary-card card-heading heading">11$ / m</div>
     
                     <ul class="secondary-card pricing-section-card-list list">
                         <li class="card-list-item text">
@@ -283,10 +281,10 @@
                         <span class="button-text">Buy now!</span>
                     </button>
                 </div>
-    
+                
                 <div class="pricing-section-card secondary-card--large card">
                     <div class="secondary-card card-subheading text">Lorem Ipsum cadet est</div>
-                    <div class="secondary-card card-heading heading">22$ / m</div>
+                    <div class="secondary-card card-heading heading">33$ / m</div>
     
                     <ul class="secondary-card pricing-section-card-list list">
                         <li class="card-list-item text">
@@ -314,8 +312,50 @@
 
         </section>
     </main>
-    <footer></footer>
-
-    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-large">
+                <div class="contact__small footer-contact__small">
+                    <div class="contact__small-info footer-contact__small-info">
+                        <div class="contact__small-info-text footer-contact-text text">info@wktech.com</div>
+                        <div class="contact__small-info-bold footer-contact-text text">+49 012 203937</div>
+                    </div>
+                    <div class="contact__small-adress footer-contact-text text">Ostbordweg 203 <br>20212 Schenefeld</div>
+                </div>
+                <div class="footer-large-list">
+                    <div class="logo footer-logo" tabindex="0">
+                        <img class="logo-image" src="./images/logo_footer.svg" alt="Wunderkopf Logo / Frida D Logo">
+                        <div class="logo-text">
+                            <span>wunderkopf</span>
+                            <span>technologies</span>
+                        </div>
+                    </div>
+                    <div class="footer-large-list-buttons">
+                        <button class="secondary-button footer-button button" tabindex="0">
+                            <span class="button-text">Send Message</span>
+                        </button>
+                        <button class="icon-button footer-icon-button">
+                            <span class="material-icons-round icon-button--icon">expand_less</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-small">
+            <div class="footer-small-rights text">2023 Copyright wunderkopf technologies Gmbh. 
+                All rights reserved</div>
+            <div class="footer-small-links">
+                <ul class="footer-small-list list">
+                    <li class="footer-small-list-item list-item">
+                        <a href="#" class="footer-small-list-item-text">Impressum</a>
+                    </li>
+                    <li class="footer-small-list-item list-item">|</li>
+                    <li class="footer-small-list-item list-item">
+                        <a href="#" class="footer-small-list-item-text">Datenschutz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>   
 </body>
 </html>

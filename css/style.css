@@ -94,7 +94,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
 
     border-radius: var(--border-radius-large);
 }
@@ -144,9 +144,6 @@
 
 @media all and (min-width: 550px) {
 
-    .section {
-        width: 75%;
-    }
     .info-section-heading-frida {
         flex-direction: row;
     }
@@ -400,7 +397,7 @@
 
 .contact-section-info-content-copy {
     position: absolute;
-    background-color: var(--theme-accent-3);
+    background-color: var(--theme-gradient-1);
     padding: 6px 13px;
     border-radius: 5px;
     font-family: var(--typography-font-secondary);
@@ -421,9 +418,9 @@
     position: absolute;
     width: 0;
     height: 0;
-    border: 5px solid transparent;
+    border: 6px solid transparent;
     border-bottom: 0;
-    border-top: 10px solid var(--theme-accent-3);
+    border-top: 10px solid var(--theme-gradient-1);
     bottom: -8px;
     left: 10px;
 }
@@ -609,13 +606,27 @@
 }
 
 .pricing-section-info-heading {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 20px 0px;
 }
 
 .pricing-section-info-text {
     text-align: center;
     margin: 0px 0px 20px 0px;
+    max-width: 450px;
+}
+
+.switch-label {
+    padding: 0px 5px !important;
+}
+
+.pricing-section-switch-label {
+    font-family: var(--typography-font-primary);
+    color: var(--theme-background-4);
+}
+
+.pricing-section-switch-label--active {
+    color: var(--theme-on-background);
 }
 
 .pricing-section-card-container {
@@ -628,7 +639,6 @@
 .pricing-section-card {
     padding: 60px 30px 40px 30px;
     width: 100%;
-    max-width: 350px;
 }
 
 .card-subheading {
@@ -692,13 +702,12 @@
 
 .pricing-card-button {
     width: 100% !important;
+    padding: 12px 0px !important;
 }
 
 @media all and (min-width: 750px) {
     .pricing-section-card-container {
         flex-direction: row;
-        justify-content: space-between;
-        align-items: end;
         gap: 3%;
     }
 
@@ -715,4 +724,119 @@
         padding: 40px 20px;
     }
     
+}
+
+/* footer */
+
+.footer-container {
+    width: 100%;
+    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-accent-4) 50%);
+}
+
+.footer-large {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+
+.footer-large-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.footer-contact__small  {
+    padding: 40px 0px;
+}
+
+.footer-contact-text {
+    color: var(--theme-on-primary) !important;
+    font-size: 1rem;
+}
+
+.footer-logo {
+    color: var(--theme-on-primary) !important;
+}
+
+.footer-large-list-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-button {
+    background: transparent !important;
+    outline-color: var(--theme-on-primary) !important;
+}
+
+.footer-button > * {
+    color: var(--theme-on-primary) !important;
+}
+
+.footer-button::after {
+    background-color: var(--theme-on-primary) !important;
+}
+
+.secondary-button:hover .button-text {
+    color: var(--theme-accent-4) !important;
+}
+
+.footer-icon-button {
+    background-color: var(--theme-on-primary);
+}
+
+.footer-icon-button::after {
+    display: none !important;
+}
+
+.icon-button--icon {
+    color: var(--theme-accent-4);
+}
+
+
+
+.footer-small {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0px;
+    row-gap: 10px;
+}
+
+.footer-small-list {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.footer-small-list-item, .footer-small-list-item > *,  .footer-small-rights{
+    color: var(--theme-primary) !important;
+    font-family: var(--typography-font-primary) !important;
+    font-size: .9rem !important;
+}
+
+.footer-small-list-item-text:hover {
+    text-decoration: underline;
+}
+
+@media all and (min-width: 750px) {
+    .footer-small {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-large-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-large-list-buttons {
+        width: auto;
+        gap: 30px;
+        justify-content: unset;
+    }
 }

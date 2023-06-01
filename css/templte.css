@@ -51,6 +51,7 @@
 html {
     font-size: calc(14px + 0.390625vw);
     background-color: var(--theme-background-1);
+    scroll-behavior: smooth;
 }
 
 .material-icons {
