@@ -20,7 +20,7 @@
 	
 	--theme-accent-1: hsl(244, 88%, 67%);
 	--theme-accent-2: hsl(175, 76%, 52%);
-    --theme-accent-3: hsl(0, 88%, 86%);
+    --theme-accent-3: hsla(0, 89%, 86%, 0.5);
     --theme-accent-4: hsl(263, 81%, 56%);
 	
 	--theme-gradient-1: hsl(337, 63%, 48%);
@@ -52,6 +52,14 @@ html {
     font-size: calc(14px + 0.390625vw);
     background-color: var(--theme-background-1);
     scroll-behavior: smooth;
+}
+
+*:focus-visible {
+    border: none;
+    outline: 2px solid var(--theme-accent-2) !important;
+    outline-offset: 5px;
+    border-radius: 15px;
+    transition: none !important;
 }
 
 .material-icons {

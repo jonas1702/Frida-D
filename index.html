@@ -6,8 +6,10 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/templte.css">
     <link rel="stylesheet" href="css/button.css">
+
 
     <link rel="preconnect" href="//www.wkstatic.de">
     <script src="https://www.wkstatic.de/js/jquery-3.4.1.js"></script>
@@ -46,17 +48,17 @@
             </div>
             <div class="nav-list--large">
                 <ul class="nav-list-container list--flex">
-                    <li class="nav-list-item--large nav-list-item--active list-item--active">
+                    <li class="nav-list-item--large nav-list-item--active list-item--active" tabindex="0">
                         <span class="list-item__icon material-icons-round">home</span>
-                        <a class="nav-list-item__text" href="#">Home</a>
+                        <a class="nav-list-item__text" href="#" tabindex="-1">Home</a>
                     </li>
-                    <li class="nav-list-item--large nav-list-item list-item">
+                    <li class="nav-list-item--large nav-list-item list-item" tabindex="0">
                         <span class="list-item__icon material-icons-round">person</span>
-                        <a class="nav-list-item__text" href="#">About</a>
+                        <a class="nav-list-item__text" href="#" tabindex="-1">About</a>
                     </li>
-                    <li class="nav-list-item--large nav-list-item list-item">
+                    <li class="nav-list-item--large nav-list-item list-item" tabindex="0">
                         <span class="list-item__icon material-icons-round">call</span>
-                        <a class="nav-list-item__text" href="#">Contact</a>
+                        <a class="nav-list-item__text" href="#" tabindex="-1">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -76,15 +78,15 @@
             <ul class="nav-list-container">
                 <li class="nav-list-item--active nav-list-item--mobile list-item--active">
                     <span class="list-item__icon material-icons-round">home</span>
-                    <a class="nav-list-item__text" href="#">Home</a>
+                    <a class="nav-list-item__text" href="#" tabindex="-1">Home</a>
                 </li>
                 <li class="nav-list-item nav-list-item--mobile list-item--active">
                     <span class="list-item__icon material-icons-round">person</span>
-                    <a class="nav-list-item__text" href="#">About</a>
+                    <a class="nav-list-item__text" href="#" tabindex="-1" >About</a>
                 </li>
                 <li class="nav-list-item nav-list-item--mobile list-item--active">
                     <span class="list-item__icon material-icons-round">call</span>
-                    <a class="nav-list-item__text" href="#">Contact</a>
+                    <a class="nav-list-item__text" href="#" tabindex="-1">Contact</a>
                 </li>
                 <li class="nav-list-item list-item--active">
                     <div class="contact__small">
@@ -99,10 +101,10 @@
         </div>
         
         <div class="nav-list-footer--mobile">
-            <button class="button nav-primary-button nav-button list-item" tabindex="0">
+            <button class="button nav-primary-button nav-button list-item" tabindex="-1">
                 <span class="button-text">Log in</span>
             </button>
-            <button class="secondary-button button nav-button list-item" tabindex="0">
+            <button class="secondary-button button nav-button list-item" tabindex="-1">
                 <span class="button-text">Sign up</span>
             </button>
         </div>
@@ -116,7 +118,6 @@
                         <div class="info-section-heading-frida-text">Fri</div>
                         <div class="info-section-heading-frida-text">Da</div>
                     </div>
-                    
     
                     <div class="info-section-heading--desktop">
                         <div class="info-section-text text">Lorem, ipsum dolor sit amet consectetur ad accusantium aut sequi facilis neque officia praesentium iure inventore esse! Expedita.</div>
@@ -168,19 +169,19 @@
                 <div class="contact-section-info-heading heading">Have questions? How can we help?</div>
                 <div class="contact-section-info-text text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
                 <div class="contact-section-info-content">
-                    <div class="contact-section-info-content-item copyElm">
+                    <div class="contact-section-info-content-item copyElm" tabindex="0">
                         <div class="contact-section-info-content-copy">copy</div>
                         <span class="contact-section-info-content-icon material-icons-round md-36">call</span>
                         <div class="contact-section-info-content-text text copyText">+ 49 083 328931</div>
                     </div>
 
-                    <div class="contact-section-info-content-item copyElm">
+                    <div class="contact-section-info-content-item copyElm" tabindex="0">
                         <div class="contact-section-info-content-copy">copy</div>
                         <span class="contact-section-info-content-icon material-icons-round md-36">mail</span>
                         <div class="contact-section-info-content-text text copyText">Example@mail.de</div>
                     </div>
 
-                    <div class="contact-section-info-content-item copyElm">
+                    <div class="contact-section-info-content-item copyElm" tabindex="0">
                         <div class="contact-section-info-content-copy">copy</div>
                         <span class="contact-section-info-content-icon material-icons-round md-36">location_on</span>
                         <div class="contact-section-info-content-text text copyText">Musterstraße 142 <br> 20189 Hamburg</div>
@@ -188,7 +189,7 @@
                 </div>
             </div>  
 
-            <form action="submit" class="contact-section-form" action="javascript:;" onsubmit="handleSubmit()">
+            <form class="contact-section-form" action="javascript:;" onsubmit="handleSubmit()">
                 <div class="contact-section-form-item form-first-name">
                     <div class="contact-section-form-text">First Name</div>
                     <input type="text" class="contact-section-form-field" name="first-name" placeholder="...">
@@ -216,11 +217,11 @@
                 <div class="pricing-section-info-text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere amet reiciendis, exercitationem doloribus nesciunt! Inventore excepturi atque assumenda optio.</div>
                 <form class="wkd-form-field pricing-section-bool basic-switch" id="basic-switch" data-wkd-auto-init="WkdFormField">
                     <label class="switch-label pricing-section-switch-label--active" id="label1" for="basic-switch">monthly</label>
-                    <div class="wkd-switch wkd-switch--touch wkd-form-field__input" data-wkd-auto-init="WkdSwitch">
+                    <div class="wkd-switch wkd-switch--touch wkd-form-field__input" tabindex="0"  data-wkd-auto-init="WkdSwitch">
                         <div class="wkd-switch__track"></div>
                         <div class="wkd-switch__thumb-underlay">
                             <div class="wkd-switch__thumb"></div>
-                            <input type="checkbox" class="wkd-switch__native-control pricing-switch" role="switch" aria-checked="false">
+                            <input type="checkbox" class="wkd-switch__native-control pricing-switch" tabindex="-1" role="switch" aria-checked="false">
                         </div>
                     </div>
                     <label class="switch-label pricing-section-switch-label" id="label2" for="basic-switch">yearly</label>
@@ -351,7 +352,7 @@
                     </li>
                     <li class="footer-small-list-item list-item">|</li>
                     <li class="footer-small-list-item list-item">
-                        <a href="#" class="footer-small-list-item-text">Datenschutz</a>
+                        <a href="datenschutz.html" class="footer-small-list-item-text">Datenschutz</a>
                     </li>
                 </ul>
             </div>

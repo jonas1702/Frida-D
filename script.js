@@ -20,7 +20,16 @@ menu.addEventListener('click', () => {
 })
 
 function handleSubmit() {
-    return
+    
+    let forms = Array.from(document.querySelectorAll('.contact-section-form-field'))
+    forms.forEach(form => {
+        console.log(form.value.length)
+        if (form.value.length == 0) {
+            form.classList.add('form-field--wrong')
+        } else {
+            form.classList.remove('form-field--wrong')
+        }
+    })
 }
 
 

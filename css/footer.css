@@ -1,0 +1,125 @@
+/* footer */
+
+.footer-container {
+    width: 100%;
+    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-accent-4) 50%);
+}
+
+.footer-large {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+
+.footer-large-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.footer-contact__small  {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact-text {
+    color: var(--theme-on-primary) !important;
+    font-size: 1rem !important;
+}
+
+.footer-logo {
+    color: var(--theme-on-primary) !important;
+}
+
+.footer-large-list-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-button {
+    background: transparent !important;
+    outline-color: var(--theme-on-primary) !important;
+}
+
+.footer-button > * {
+    color: var(--theme-on-primary) !important;
+}
+
+.footer-button::after {
+    background-color: var(--theme-on-primary) !important;
+}
+
+.footer-button:active::after {
+    background-color: var(--theme-on-primary) !important;
+}
+
+.secondary-button:hover .button-text {
+    color: var(--theme-accent-4) !important;
+}
+
+.footer-icon-button {
+    background-color: var(--theme-on-primary);
+}
+
+.footer-icon-button::after {
+    display: none !important;
+}
+
+.icon-button--icon {
+    color: var(--theme-accent-4);
+}
+
+
+
+.footer-small {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0px;
+    row-gap: 10px;
+}
+
+.footer-small-list {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.footer-small-list-item, .footer-small-list-item > *,  .footer-small-rights{
+    color: var(--theme-primary) !important;
+    font-family: var(--typography-font-primary) !important;
+    font-size: .9rem !important;
+}
+
+.footer-small-list-item-text:hover {
+    text-decoration: underline;
+}
+
+@media all and (min-width: 750px) {
+    .footer-small {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-contact__small {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .footer-large-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-large-list-buttons {
+        width: auto;
+        gap: 30px;
+        justify-content: unset;
+    }
+}
