@@ -73,7 +73,7 @@
         outline: none;
     }
     
-    .secondary-button:hover .button-text, .icon-button:hover .button-text{
+    .secondary-button:hover:not(.footer-button) .button-text, .icon-button:hover .button-text{
         color: var(--theme-on-primary) !important;
     }
     

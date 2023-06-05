@@ -1,0 +1,159 @@
+<html lang="en">
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/nav.css">
+            <link rel="stylesheet" href="css/footer.css">
+            <link rel="stylesheet" href="css/templte.css">
+            <link rel="stylesheet" href="css/button.css">
+            <link rel="stylesheet" href="css/login.css">
+
+        
+        
+            <link rel="preconnect" href="//www.wkstatic.de">
+            <script src="https://www.wkstatic.de/js/jquery-3.4.1.js"></script>
+        
+            <!-- tab browser icon -->
+            <link rel="icon" type="image/x-icon" href="/images/favicon_wunderkopf.svg">
+        
+            <script src="https://code.wunderkopf.io/libs/util/iban.js"></script>
+        
+             <!--  bundles -->
+             <link href="https://code.wunderkopf.io/libs/wkd/1.0.4/bundle.css" rel="stylesheet">
+             <script src="https://code.wunderkopf.io/libs/wkd/1.0.4/bundle.js"></script>
+        
+            <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" 
+            rel="stylesheet">
+            <script src="script.js" defer></script>
+            <title>Frida D Login</title>
+        </head>
+    <body>
+        <header class="nav">
+            <div class="nav-container">
+                <div class="logo" name='logo' tabindex="0">
+                    <img class="logo-image" src="./images/logo.svg" alt="Wunderkopf Logo / Frida D Logo">
+                    <div class="logo-text">
+                        <span>wunderkopf</span>
+                        <span>technologies</span>
+                    </div>
+                </div>
+                <div class="nav-menu hamburger-menu">
+                    <input type="checkbox" class="checkbox"/>
+                    <span class="span1"></span>
+                    <span class="span"></span>
+                    <span class="span1"></span>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="nav-list--large">
+                    <ul class="nav-list-container list--flex">
+                        <li class="nav-list-item--large nav-list-item" name='home' tabindex="0">
+                            <span class="list-item__icon material-icons-round">home</span>
+                            <a class="nav-list-item__text" tabindex="-1">Home</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login-section">
+                    <button class="button nav-primary-button nav-button list-item" tabindex="0">
+                        <span class="button-text">Log in</span>
+                    </button>
+                    <button class="secondary-button button nav-secondary-button nav-button list-item" tabindex="0">
+                        <span class="button-text">Sign up</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <aside class="nav-list--mobile">
+            <div class="nav-list-mobile-container">
+                <img src="./images/mobilenav.svg" class="nav-list-svg--mobile">
+                <ul class="nav-list-container">
+                    <li class="nav-list-item--active nav-list-item--mobile list-item--active">
+                        <span class="list-item__icon material-icons-round">home</span>
+                        <a class="nav-list-item__text" tabindex="-1">Home</a>
+                    </li>
+                    <li class="nav-list-item nav-list-item--mobile list-item--active">
+                        <span class="list-item__icon material-icons-round">person</span>
+                        <a class="nav-list-item__text" tabindex="-1" >About</a>
+                    </li>
+                    <li class="nav-list-item nav-list-item--mobile list-item--active">
+                        <span class="list-item__icon material-icons-round">call</span>
+                        <a class="nav-list-item__text" tabindex="-1">Contact</a>
+                    </li>
+                    <li class="nav-list-item list-item--active">
+                        <div class="contact__small">
+                            <div class="contact__small-info">
+                                <div class="contact__small-info-text contact-text text">info@wktech.com</div>
+                                <div class="contact__small-info-bold contact-text text">+49 012 203937</div>
+                            </div>
+                            <div class="contact__small-adress contact-text text">Ostbordweg 203 <br>20212 Schenefeld</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-list-footer--mobile">
+                <button class="button nav-primary-button nav-button list-item" tabindex="-1">
+                    <span class="button-text">Log in</span>
+                </button>
+                <button class="secondary-button button nav-button list-item" tabindex="-1">
+                    <span class="button-text">Sign up</span>
+                </button>
+            </div>
+        </aside>
+        <div class="blur"></div>
+        <main>
+            <section class="login">
+
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-large">
+                    <div class="contact__small footer-contact__small">
+                        <div class="contact__small-info footer-contact__small-info">
+                            <div class="contact__small-info-text footer-contact-text text">info@wktech.com</div>
+                            <div class="contact__small-info-bold footer-contact-text text">+49 012 203937</div>
+                        </div>
+                        <div class="contact__small-adress footer-contact-text text">Ostbordweg 203 <br>20212 Schenefeld</div>
+                    </div>
+                    <div class="footer-large-list">
+                        <div class="logo footer-logo" tabindex="0">
+                            <img class="logo-image" src="./images/logo_footer.svg" alt="Wunderkopf Logo / Frida D Logo">
+                            <div class="logo-text">
+                                <span>wunderkopf</span>
+                                <span>technologies</span>
+                            </div>
+                        </div>
+                        <div class="footer-large-list-buttons">
+                            <button class="secondary-button footer-button button" tabindex="0">
+                                <span class="button-text">Send Message</span>
+                            </button>
+                            <button class="icon-button footer-icon-button">
+                                <span class="material-icons-round icon-button--icon">expand_less</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-small">
+                <div class="footer-small-rights text">2023 Copyright wunderkopf technologies Gmbh. 
+                    All rights reserved</div>
+                <div class="footer-small-links">
+                    <ul class="footer-small-list list">
+                        <li class="footer-small-list-item list-item">
+                            <a href="#" class="footer-small-list-item-text">Impressum</a>
+                        </li>
+                        <li class="footer-small-list-item list-item">|</li>
+                        <li class="footer-small-list-item list-item">
+                            <a href="datenschutz.html" class="footer-small-list-item-text">Datenschutz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>   
+    </body>
+</html>

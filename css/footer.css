@@ -57,7 +57,7 @@
     background-color: var(--theme-on-primary) !important;
 }
 
-.secondary-button:hover .button-text {
+.footer-button:hover .button-text {
     color: var(--theme-accent-4) !important;
 }
 

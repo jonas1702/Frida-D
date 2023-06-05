@@ -54,6 +54,11 @@ html {
     scroll-behavior: smooth;
 }
 
+a[href^=tel], a {
+    text-decoration: inherit;
+    color: inherit;
+ }
+
 *:focus-visible {
     border: none;
     outline: 2px solid var(--theme-accent-2) !important;
@@ -173,7 +178,11 @@ html {
 	display: none !important;	
 }
 
-
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    border: 2px solid var(--theme-primary) !important;
+}
 
 a {
     text-decoration: none;
