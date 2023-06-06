@@ -34,7 +34,7 @@
     <body>
         <header class="nav">
             <div class="nav-container">
-                <div class="logo" name='logo' tabindex="0">
+                <div class="logo" name='reload' tabindex="0">
                     <img class="logo-image" src="./images/logo.svg" alt="Wunderkopf Logo / Frida D Logo">
                     <div class="logo-text">
                         <span>wunderkopf</span>
@@ -51,14 +51,17 @@
                 </div>
                 <div class="nav-list--large">
                     <ul class="nav-list-container list--flex">
-                        <li class="nav-list-item--large nav-list-item" name='home' tabindex="0">
-                            <span class="list-item__icon material-icons-round">home</span>
-                            <a class="nav-list-item__text" tabindex="-1">Home</a>
-                        </li>
+                        <a href="index.html" tabindex="-1">
+                            <li class="nav-list-item--large nav-list-item" name='home' tabindex="0">
+                                <span class="list-item__icon material-icons-round">home</span>
+                                <span class="nav-list-item__text">Home</span>
+                            </li>
+                        </a>
+                       
                     </ul>
                 </div>
                 <div class="login-section">
-                    <button class="button nav-primary-button nav-button list-item" tabindex="0">
+                    <button class="button nav-primary-button nav-button list-item button--active" name="reload" tabindex="0">
                         <span class="button-text">Log in</span>
                     </button>
                     <button class="secondary-button button nav-secondary-button nav-button list-item" tabindex="0">
@@ -96,7 +99,7 @@
             </div>
             
             <div class="nav-list-footer--mobile">
-                <button class="button nav-primary-button nav-button list-item" tabindex="-1">
+                <button class="button nav-primary-button nav-button list-item button--active" tabindex="-1">
                     <span class="button-text">Log in</span>
                 </button>
                 <button class="secondary-button button nav-button list-item" tabindex="-1">
@@ -107,7 +110,41 @@
         <div class="blur"></div>
         <main>
             <section class="login">
-
+                <div class="login-container">
+                    <div class="login-swipe">
+                        <div class="login-swipe-card">
+                            <div class="login-swipe-card-heading heading">Start your journey with us.</div>
+                            <div class="login-swipe-card-text text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                            <img src="" class="login-swipe-card-svg" alt="">
+                        </div>
+                        <div class="login-swipe-card">
+                            <div class="login-swipe-card-heading heading">Start your journey with us.</div>
+                            <div class="login-swipe-card-text text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                            <img src="" class="login-swipe-card-svg" alt="">
+                        </div>
+                        <div class="login-swipe-page-indication">
+                            <span class="login-swipe-page-indication-dot--active"></span>
+                            <span class="login-swipe-page-indication-dot"></span>
+                        </div>
+                    </div>
+                    <div class="login-interface">
+                        <div class="login-interface-heading heading">Hello Again</div>
+                        <div class="login-interface-text text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</div>
+                    </div>
+                    <form class="login-interface-form" action="javascript:;" onsubmit="handleLogin()">
+                        <div class="form-item login-interface-form-item username">
+                            <div class="form-text login-interface-form-text">Username / Email</div>
+                            <input type="text" class="form-input login-interface-form-field" name="username" placeholder="...">
+                        </div>
+                        <div class="form-item login-interface-form-item password">
+                            <div class="form-text login-interface-form-text">Password</div>
+                            <input type="password" class="form-input login-interface-form-field" name="password">
+                        </div>
+                        <button type="submit" name="login-submit" class="primary-button button form-button" tabindex="0">
+                            <span class="button-text">Send Message</span>
+                        </button>
+                    </form>
+                </div>
             </section>
         </main>
         <footer>
@@ -132,7 +169,7 @@
                             <button class="secondary-button footer-button button" tabindex="0">
                                 <span class="button-text">Send Message</span>
                             </button>
-                            <button class="icon-button footer-icon-button">
+                            <button class="icon-button footer-icon-button" name="up">
                                 <span class="material-icons-round icon-button--icon">expand_less</span>
                             </button>
                         </div>

@@ -98,10 +98,13 @@ switchBtn.addEventListener('click', () => {
 
 /* nav scroll */
 
-document.querySelector('[name=home]').addEventListener('click', () => location.reload())
-document.querySelector('[name=logo]').addEventListener('click', () => location.reload())
+Array.from(document.querySelectorAll('[name=reload]')).forEach(element => {
+    element.addEventListener('click', () => location.reload())
+})
+
+Array.from(document.querySelectorAll('[name=up]')).forEach(element => {
+    element.addEventListener('click', () => window.scrollTo(0, 0))
+})
 
 document.querySelector('[name=contact]').addEventListener('click', () => window.scrollTo(0, 1060))
 document.querySelector('[name=pricing]').addEventListener('click', () => window.scrollTo(0, 1800))
-
-document.querySelector('.footer-icon-button').addEventListener('click', () => window.scrollTo(0, 0));

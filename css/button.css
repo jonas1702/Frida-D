@@ -61,6 +61,11 @@
     outline: none;
 }
 
+.button--active {
+    background-color: var(--theme-gradient-1) !important;
+    color: var(--theme-on-primary) !important;
+}
+
 /* check for none hover devices */
 
 @media all and (hover:hover) {

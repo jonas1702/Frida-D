@@ -393,6 +393,8 @@
     position: inherit;
     padding: 0px 0px 50px 0px;
     max-width: 450px;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-section-info-heading {
@@ -400,11 +402,15 @@
     padding: 0px 0px 20px 0px;
 }
 
+.contact-section-info-container {
+    flex-direction: row;
+    display: none;
+}
+
 .contact-section-info-content {
     flex-direction: column;
     display: none;
     padding-top: 40px;
-    padding-left: 20px;
     row-gap: 10px;
 }
 
@@ -415,8 +421,8 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     align-items: center;
-    column-gap: 20px;
-    padding: 12px 15px;
+    column-gap: 12px;
+    padding: 10px;
     width: fit-content;
     cursor: pointer;
     transform-origin: center;
@@ -474,6 +480,11 @@
     grid-row: 2;
 }
 
+.contact-svg {
+    width: min(28vw, 250px) ;
+    z-index: -1;
+}
+
 /* contact section right */
 
 .contact-section-form {
@@ -483,6 +494,7 @@
     column-gap: 20px;
     row-gap: 15px;
     margin: 0 auto;
+    height: 555px;
 
     /* gradient border */
     background: linear-gradient(white, white) padding-box,
@@ -523,19 +535,19 @@
     grid-row: 5;
 }
 
-.contact-section-form-item {
+.form-item {
     display: flex;
     flex-direction: column;
     row-gap: 2px;
 }
 
-.contact-section-form-text {
+.form-text {
     font-family: var(--typography-font-secondary-bold);
     font-size: 1rem;
     color: var(--theme-on-background);
 }
 
-.contact-section-form-field {
+.form-input {
     background: transparent;
     font-family: var(--typography-font-primary);
     outline: none;
@@ -550,7 +562,7 @@
     color: var(--theme-on-background);
 }
 
-.contact-section-form-field:focus {
+.form-input:focus {
     border: 2px solid var(--theme-primary);
     background-color: var(--theme-primary-very-light);
     outline: none !important;
@@ -614,6 +626,10 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    
+    .contact-section-info-container {
+        display: flex;
+    }
 
     .contact-section-info-content {
         display: flex;
@@ -621,7 +637,7 @@
 
     .contact-section-info {
         padding: 0px 30px 0px 0px;
-        width: 70%;
+        width: 55%;
     }
 
     /* .contact-section-info-heading {
