@@ -109,41 +109,48 @@
         </aside>
         <div class="blur"></div>
         <main>
-            <section class="login">
+            <section class="login section">
                 <div class="login-container">
                     <div class="login-swipe">
-                        <div class="login-swipe-card">
-                            <div class="login-swipe-card-heading heading">Start your journey with us.</div>
-                            <div class="login-swipe-card-text text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
-                            <img src="" class="login-swipe-card-svg" alt="">
-                        </div>
-                        <div class="login-swipe-card">
-                            <div class="login-swipe-card-heading heading">Start your journey with us.</div>
-                            <div class="login-swipe-card-text text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
-                            <img src="" class="login-swipe-card-svg" alt="">
-                        </div>
-                        <div class="login-swipe-page-indication">
-                            <span class="login-swipe-page-indication-dot--active"></span>
-                            <span class="login-swipe-page-indication-dot"></span>
+                        <div class="login-swipe-container">
+                            <div class="login-swipe-card">
+                                <div class="login-swipe-card-heading heading">Start your journey with us.</div>
+                                <div class="login-swipe-card-text text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                                <img src="./images/login.svg" class="login-swipe-card-svg" alt="">
+                                <div class="login-swipe-page-indication">
+                                    <span class="login-swipe-page-indication-dot--active"></span>
+                                    <span class="login-swipe-page-indication-dot"></span>
+                                </div>
+                            </div>
+                            <div class="login-swipe-card">
+                                <div class="login-swipe-card-heading heading">Start your journey with us.</div>
+                                <div class="login-swipe-card-text text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                                <img src="" class="login-swipe-card-svg" alt="">
+                                <div class="login-swipe-page-indication">
+                                    <span class="login-swipe-page-indication-dot--active"></span>
+                                    <span class="login-swipe-page-indication-dot"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="login-interface">
                         <div class="login-interface-heading heading">Hello Again</div>
                         <div class="login-interface-text text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</div>
+                        <form class="login-interface-form" action="javascript:;" onsubmit="handleLogin()">
+                            <div class="form-item login-interface-form-item username">
+                                <div class="form-text login-interface-form-text">Username / Email</div>
+                                <input type="text" class="form-input login-interface-form-field" name="username" placeholder="...">
+                            </div>
+                            <div class="form-item login-interface-form-item password">
+                                <div class="form-text login-interface-form-text">Password</div>
+                                <input type="password" class="form-input login-interface-form-field" name="password">
+                            </div>
+                            <button type="submit" name="login-submit" class="primary-button button form-button" tabindex="0">
+                                <span class="button-text">Send Message</span>
+                            </button>
+                        </form>
                     </div>
-                    <form class="login-interface-form" action="javascript:;" onsubmit="handleLogin()">
-                        <div class="form-item login-interface-form-item username">
-                            <div class="form-text login-interface-form-text">Username / Email</div>
-                            <input type="text" class="form-input login-interface-form-field" name="username" placeholder="...">
-                        </div>
-                        <div class="form-item login-interface-form-item password">
-                            <div class="form-text login-interface-form-text">Password</div>
-                            <input type="password" class="form-input login-interface-form-field" name="password">
-                        </div>
-                        <button type="submit" name="login-submit" class="primary-button button form-button" tabindex="0">
-                            <span class="button-text">Send Message</span>
-                        </button>
-                    </form>
+                    
                 </div>
             </section>
         </main>
