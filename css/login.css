@@ -1,11 +1,13 @@
 .login-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     border: 2px solid var(--theme-primary);
     border-radius: var(--border-radius-large);
     padding: 20px;
 }
+
+
+/* slide show */
 
 .login-swipe {
     width: 100%;
@@ -15,11 +17,23 @@
     border-radius: inherit;
 }
 
+/* .login-swipe-card:nth-child(1) {
+    background: linear-gradient(var(--theme-gradient-1) 0%, var(--theme-gradient-2) 50%);
+}
+
+.login-swipe-card:nth-child(2) {
+    background: linear-gradient(var(--theme-primary) 0%, var(--theme-accent-4) 50%);
+}
+
+.login-swipe-card:nth-child(3) {
+    background: linear-gradient(var(--theme-primary) 0%, var(--theme-accent-2) 50%);
+} */
+
 .login-swipe-container {
     position: relative;
-    width: 200% !important;
+    width: 300% !important;
     display: flex;
-    transition: .2s ease;
+    transition: .4s ease;
 }
 
 .login-swipe-card {
@@ -27,7 +41,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 20px;
+    padding: 80px 20px 0px 20px;
+    transition: all .2s ease;
 }
 
 .login-swipe-card > * {
@@ -44,12 +59,16 @@
 
 .login-swipe-card-svg {
     width: 60%;
+    align-self: center;
+    padding-bottom: 60px;
 }
 
 .login-swipe-page-indication {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    align-self: center;
+    padding-bottom: 20px;
 }
 
 .login-swipe-page-indication-dot, .login-swipe-page-indication-dot--active {
@@ -63,8 +82,14 @@
     background-color: var(--theme-on-primary) !important;
 }
 
+/* form field log in*/
+
 .login-interface {
     width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .login-interface-heading {
@@ -76,18 +101,34 @@
     text-align: center;
 }
 
+.login-interface-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-button {
+    background-color: var(--theme-gradient-1);
+}
+
 
 @media all and (min-width: 750px) {
     .login-container {
-        flex-direction: row;
+        grid-template-columns: min-content auto;
     }
 
     .login-swipe {
-        width: 40% !important;
-        max-width: 350px;
+        width: 320px;
     }
 
     .login-interface {
-        width: 50%;
+        align-self: center;
+        max-width: 420px;
+        justify-self: center;
     }
 }

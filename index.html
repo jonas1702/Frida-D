@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,10 +26,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" 
     rel="stylesheet">
-    <script src="script.js" defer></script>
     <title>Frida D</title>
 </head>
 <body>
+    <script src="script.js" defer></script>
     <header class="nav">
         <div class="nav-container">
             <div class="logo" name='reload' tabindex="0">
@@ -70,6 +71,7 @@
                 </a>
                 <button class="secondary-button button nav-secondary-button nav-button list-item" tabindex="0">
                     <span class="button-text">Sign up</span>
+                    <span class="button-hover"></span>
                 </button>
             </div>
         </div>
@@ -108,6 +110,7 @@
             </button>
             <button class="secondary-button button nav-button list-item" tabindex="-1">
                 <span class="button-text">Sign up</span>
+                <span class="button-hover"></span>
             </button>
         </div>
     </aside>
@@ -207,22 +210,22 @@
                 </div>
             </div>  
 
-            <form class="contact-section-form" action="javascript:;" onsubmit="handleSubmit()">
+            <form class="contact-section-form" action="javascript:;" name='form' onsubmit="handleSubmit()">
                 <div class="form-item contact-section-form-item form-first-name">
                     <div class="form-text contact-section-form-text">First Name</div>
-                    <input type="text" class="form-input contact-section-form-field" name="first-name" placeholder="...">
+                    <input type="text" class="form-input contact-section-form-field" name="first-name" placeholder="max">
                 </div>
                 <div class="form-item contact-section-form-item form-last-name">
                     <div class="form-text contact-section-form-text">Last Name</div>
-                    <input type="text" class="form-input contact-section-form-field" name="last-name" placeholder="...">
+                    <input type="text" class="form-input contact-section-form-field" name="last-name" placeholder="mustermann">
                 </div>
                 <div class="form-item contact-section-form-item form-email">
                     <div class="form-text contact-section-form-text">Email</div>
-                    <input type="email" class="form-input contact-section-form-field" name="email" placeholder="...">
+                    <input type="email" class="form-input contact-section-form-field" name="email" placeholder="mustermann@mail.de">
                 </div>
                 <div class="form-text form-item contact-section-form-item form-message">
                     <div class="contact-section-form-text">Message</div>
-                    <textarea class="form-input contact-section-form-field textarea" name="message" placeholder="..." ></textarea>
+                    <textarea class="form-input contact-section-form-field textarea" name="message" placeholder="muster text" ></textarea>
                 </div>
                 <button type="submit" name="submit-button" class="primary-button button form-button" tabindex="0">
                     <span class="button-text">Send Message</span>
@@ -352,6 +355,7 @@
                     <div class="footer-large-list-buttons">
                         <button class="secondary-button footer-button button" tabindex="0">
                             <span class="button-text">Send Message</span>
+                            <span class="button-hover footer-hover"></span>
                         </button>
                         <button class="icon-button footer-icon-button" name="up">
                             <span class="material-icons-round icon-button--icon">expand_less</span>

@@ -66,6 +66,11 @@ a[href^=tel], a {
     border-radius: 15px;
     transition: none !important;
 }
+input:autofill, input:-webkit-autofill  {
+    color: var(--theme-on-background);
+}
+
+    
 
 .material-icons {
     font-family: 'Material Icons';

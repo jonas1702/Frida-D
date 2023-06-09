@@ -49,24 +49,22 @@
     color: var(--theme-on-primary) !important;
 }
 
-.footer-button::after {
+.footer-hover {
     background-color: var(--theme-on-primary) !important;
 }
 
-.footer-button:active::after {
-    background-color: var(--theme-on-primary) !important;
-}
-
-.footer-button:hover .button-text {
-    color: var(--theme-accent-4) !important;
+@media all and (hover:hover) {
+    .footer-button:active .footer-hover {
+        background-color: var(--theme-on-primary) !important;
+    }
+    
+    .footer-button:hover .button-text {
+        color: var(--theme-accent-4) !important;
+    }
 }
 
 .footer-icon-button {
     background-color: var(--theme-on-primary);
-}
-
-.footer-icon-button::after {
-    display: none !important;
 }
 
 .icon-button--icon {

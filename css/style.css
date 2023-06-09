@@ -45,27 +45,21 @@
 }
 
 .frida-animation {
-    animation: waviy 1s;
+    animation: waviy 8s infinite;
     animation-delay: calc(.1s * var(--i));
-    transition: .2s ease;
-}
-
-.frida-animation:hover {
-    transform: translateY(-20px)
 }
 
 @keyframes waviy {
-    0%,40%,100% {
+    0%, 4%, 10%,100% {
       transform: translateY(0)
     }
-    20% {
+    7% {
       transform: translateY(-20px)
     }
   }
 
 .info-section-heading-frida--large {
     display: none;
-    cursor: pointer;
 }
 
 .info-section-heading-frida--mobile {
@@ -549,7 +543,7 @@
 
 .form-input {
     background: transparent;
-    font-family: var(--typography-font-primary);
+    font-family: var(--typography-font-secondary);
     outline: none;
     border: 1px solid var(--theme-background-4);
     border-radius: 15px;
@@ -558,7 +552,7 @@
     resize: none;
     overflow: hidden;
     padding: 10px 15px;
-    font-size: 1rem;
+    font-size: .9rem;
     color: var(--theme-on-background);
 }
 
