@@ -96,7 +96,6 @@
     z-index: 1;
     transform-origin: 4px 0px;
     transition: transform 0.5s ease;
-  
 }
 
 .hamburger-menu span:first-child {

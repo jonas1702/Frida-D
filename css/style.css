@@ -567,6 +567,12 @@
     background-color: var(--theme-accent-3);
 }
 
+.contact-toast {
+    background: var(--theme-on-background) !important;
+    color: var(--theme-background-1) !important;
+    font-family: var(--typography-font-secondary-bold);
+}
+
 .contact-section-form-text::after {
     content: '*';
     color: var(--theme-gradient-1);

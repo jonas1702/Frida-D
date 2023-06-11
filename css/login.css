@@ -123,12 +123,13 @@
     }
 
     .login-swipe {
-        width: 320px;
+        width: min(35vw, 320px) !important;
     }
 
     .login-interface {
         align-self: center;
         max-width: 420px;
+        padding: 0px 20px;
         justify-self: center;
     }
 }

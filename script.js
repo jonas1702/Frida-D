@@ -1,8 +1,9 @@
 wkd.autoInit();
 
-const menu = document.querySelector('.hamburger-menu')
+const menu = document.querySelector('.checkbox')
 const blur = document.querySelector('.blur')
 const mobile_expand = document.querySelector('.nav-list--mobile')
+const buttons = document.querySelector('login-section')
 let expanded = false
 
 menu.addEventListener('click', () => {
@@ -19,6 +20,12 @@ menu.addEventListener('click', () => {
     
 })
 
+blur.addEventListener('click', () => {
+    mobile_expand.style.top = '-500px'
+    blur.style.display = 'none' 
+    menu.click()
+})
+
 function handleSubmit() {
     
     let forms = Array.from(document.querySelectorAll('.contact-section-form-field'))
@@ -30,6 +37,14 @@ function handleSubmit() {
             form.classList.remove('form-field--wrong')
         }
     })
+
+    Toastify({
+        text: "Submit successful",
+        className: "contact-toast",
+        duration: 3000,
+        close: true,
+        stopOnFocus: true, 
+      }).showToast();
 }
 
 
@@ -108,29 +123,6 @@ Array.from(document.querySelectorAll('[name=up]')).forEach(element => {
 
 document.querySelector('[name=contact]').addEventListener('click', () => window.scrollTo(0, 1060))
 document.querySelector('[name=pricing]').addEventListener('click', () => window.scrollTo(0, 1800))
-
-/* login slider */
-
-const loginSlide = Array.from(document.querySelectorAll('.login-swipe-card'))
-
-index = 100
-
-function move() {
-    loginSlide.forEach(card => {
-        card.style.transform = `translateX(-${index}%)`
-    })
-    
-    console.log(index)
-    if (index == 300) {
-        loginSlide.forEach(card => {
-            card.style.transform = `translateX(0)`
-            index = 0
-        })
-    }
-    index += 100
-}
-
-setInterval(move, 10000)
 
 
 function handleLogin() {
