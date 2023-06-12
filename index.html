@@ -109,9 +109,11 @@
         </div>
         
         <div class="nav-list-footer--mobile">
-            <button class="button nav-primary-button nav-button list-item" tabindex="-1">
-                <span class="button-text">Log in</span>
-            </button>
+            <a href="login.html" tabindex="-1">
+                <button class="button nav-primary-button nav-button list-item" tabindex="0">
+                    <span class="button-text">Log in</span>
+                </button>
+            </a>
             <button class="secondary-button button nav-button list-item" tabindex="-1">
                 <span class="button-text">Sign up</span>
                 <span class="button-hover"></span>
@@ -190,7 +192,14 @@
             <div class="contact-section-info">
                 <div class="contact-section-info-heading heading">Have questions? How can we help?</div>
                 <div class="contact-section-info-text text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                <div class="contact-section-info-container">
+                <div class="contact__small contact__small-03">
+                    <div class="contact__small-info">
+                        <div class="contact__small-info-text contact-text text">info@wktech.com</div>
+                        <div class="contact__small-info-bold text">+49 012 203937</div>
+                    </div>
+                    <div class="contact__small-adress tex contact-text text">Ostbordweg 203 <br>20212 Schenefeld</div>
+                </div>
+                <!-- <div class="contact-section-info-container">
                     <div class="contact-section-info-content">
                         <div class="contact-section-info-content-item copyElm" tabindex="0">
                             <div class="contact-section-info-content-copy">copy</div>
@@ -211,7 +220,7 @@
                         </div>
                     </div>
                     <img class="contact-svg" src="./images/svg_contact.svg" alt="svg_contact">
-                </div>
+                </div> -->
             </div>  
 
             <form class="contact-section-form" action="javascript:;" name='form' onsubmit="handleSubmit()">

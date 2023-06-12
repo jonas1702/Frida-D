@@ -3,6 +3,7 @@
 .footer-container {
     width: 100%;
     background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-accent-4) 50%);
+    margin-top: 40px;
 }
 
 .footer-large {

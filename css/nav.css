@@ -233,6 +233,7 @@
 
 .contact-text {
     font-size: 1.2rem !important;
+    cursor: pointer;
 }
 
 .contact__small-info-bold {

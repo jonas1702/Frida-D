@@ -26,11 +26,18 @@ blur.addEventListener('click', () => {
     menu.click()
 })
 
+const mobileNavButtons = Array.from(document.querySelectorAll('.nav-list-item--mobile'))
+mobileNavButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        menu.click()
+    })
+})
+
+
 function handleSubmit() {
     
     let forms = Array.from(document.querySelectorAll('.contact-section-form-field'))
     forms.forEach(form => {
-        console.log(form.value.length)
         if (form.value.length == 0) {
             form.classList.add('form-field--wrong')
         } else {
@@ -121,15 +128,14 @@ Array.from(document.querySelectorAll('[name=up]')).forEach(element => {
     element.addEventListener('click', () => window.scrollTo(0, 0))
 })
 
-document.querySelector('[name=contact]').addEventListener('click', () => window.scrollTo(0, 1060))
-document.querySelector('[name=pricing]').addEventListener('click', () => window.scrollTo(0, 1800))
+document.querySelector('[name=contact]').addEventListener('click', () => window.scrollTo(0, 1000))
+document.querySelector('[name=pricing]').addEventListener('click', () => window.scrollTo(0, 1740))
 
 
 function handleLogin() {
     
     let forms = Array.from(document.querySelectorAll('.login-interface-form-field'))
     forms.forEach(form => {
-        console.log(form.value.length)
         if (form.value.length == 0) {
             form.classList.add('form-field--wrong')
         } else {
