@@ -68,11 +68,13 @@
     background-color: var(--theme-on-primary);
 }
 
+.footer-icon-button:hover {
+    transform: scale(1.1);
+}
+
 .icon-button--icon {
     color: var(--theme-accent-4);
 }
-
-
 
 .footer-small {
     display: flex;

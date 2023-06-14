@@ -3,7 +3,7 @@ wkd.autoInit();
 const menu = document.querySelector('.checkbox')
 const blur = document.querySelector('.blur')
 const mobile_expand = document.querySelector('.nav-list--mobile')
-const buttons = document.querySelector('login-section')
+const buttons = document.querySelector('.login-section')
 let expanded = false
 
 menu.addEventListener('click', () => {
@@ -11,11 +11,14 @@ menu.addEventListener('click', () => {
     if (expanded == false) {
         mobile_expand.style.top = '-500px'
         blur.style.display = 'none'
+        buttons.style.display = 'flex'
     }
     if (expanded == true) {
         mobile_expand.style.top = '90px'
         setTimeout( function () {
-            blur.style.display = 'block' },200);
+            blur.style.display = 'block' 
+            buttons.style.display = 'none'
+        },200);
     }
     
 })
@@ -27,11 +30,24 @@ blur.addEventListener('click', () => {
 })
 
 const mobileNavButtons = Array.from(document.querySelectorAll('.nav-list-item--mobile'))
+
 mobileNavButtons.forEach(button => {
     button.addEventListener('click', () => {
         menu.click()
     })
 })
+
+document.querySelector('.contact').addEventListener('click', () => window.scrollTo(0, getOffset(document.querySelector('.contact-section-03')).top))
+
+document.querySelector('.pricing').addEventListener('click', () => window.scrollTo(0, getOffset(document.querySelector('.pricing-section-04')).top))
+
+function getOffset(el) {
+    const rect = el.getBoundingClientRect();
+    return {
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY
+    };
+  }
 
 
 function handleSubmit() {
@@ -44,9 +60,8 @@ function handleSubmit() {
             form.classList.remove('form-field--wrong')
         }
     })
-
     Toastify({
-        text: "Submit successful",
+        text: "Submit",
         className: "contact-toast",
         duration: 3000,
         close: true,

@@ -1,0 +1,110 @@
+Contact section left 
+
+<!-- <div class="contact-section-info-container">
+        <div class="contact-section-info-content">
+            <div class="contact-section-info-content-item copyElm" tabindex="0">
+                <div class="contact-section-info-content-copy">copy</div>
+                <span class="contact-section-info-content-icon material-icons-round md-36">call</span>
+                <div class="contact-section-info-content-text text copyText">+ 49 083 328931</div>
+            </div>
+
+            <div class="contact-section-info-content-item copyElm" tabindex="0">
+                <div class="contact-section-info-content-copy">copy</div>
+                <span class="contact-section-info-content-icon material-icons-round md-36">mail</span>
+                <div class="contact-section-info-content-text text copyText">Example@mail.de</div>
+            </div>
+
+            <div class="contact-section-info-content-item copyElm" tabindex="0">
+                <div class="contact-section-info-content-copy">copy</div>
+                <span class="contact-section-info-content-icon material-icons-round md-36">location_on</span>
+                <div class="contact-section-info-content-text text copyText">Musterstraße 142 <br> 20189 Hamburg</div>
+            </div>
+        </div>
+        <img class="contact-svg" src="./images/svg_contact.svg" alt="svg_contact">
+    </div> -->
+
+
+css: 
+
+/* .contact-section-info-container {
+    flex-direction: row;
+    display: none;
+}
+
+.contact-section-info-content {
+    flex-direction: column;
+    display: none;
+    padding-top: 40px;
+    row-gap: 10px;
+}
+
+.contact-section-info-content-item {
+    display: grid;
+    position: relative;
+    width: 200px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 12px;
+    padding: 10px;
+    width: fit-content;
+    cursor: pointer;
+    transform-origin: center;
+    border-radius: var(--border-radius);
+    transition: .1s ease;
+}
+
+.contact-section-info-content-item:hover {
+    background-color: var(--theme-primary-light);
+}
+
+.contact-section-info-content-item:hover .contact-section-info-content-copy {
+    display: block;
+}
+
+.contact-section-info-content-copy {
+    position: absolute;
+    background-color: var(--theme-accent-2);
+    padding: 6px 13px;
+    border-radius: 5px;
+    font-family: var(--typography-font-secondary);
+    font-size: .8rem;
+    color: var(--theme-on-background);
+    display: none;
+    width: min-content;
+    justify-self: end;
+
+    top: -30px;
+
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.contact-section-info-content-copy::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom: 0;
+    border-top: 10px solid var(--theme-accent-2);
+    bottom: -8px;
+    left: 10px;
+}
+
+.contact-section-info-content-icon {
+    color: var(--theme-primary);
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.contact-section-info-content-text {
+    font-family: var(--typography-font-secondary-medium) !important;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.contact-svg {
+    width: min(28vw, 250px) ;
+    z-index: -1;
+} */

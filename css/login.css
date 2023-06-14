@@ -18,15 +18,15 @@
 }
 
 /* .login-swipe-card:nth-child(1) {
-    background: linear-gradient(var(--theme-gradient-1) 0%, var(--theme-gradient-2) 50%);
+    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-gradient-2) 50%);
 }
 
 .login-swipe-card:nth-child(2) {
-    background: linear-gradient(var(--theme-primary) 0%, var(--theme-accent-4) 50%);
+    background: linear-gradient(135deg, var(--theme-gradient-2) 0%, var(--theme-accent-4) 50%);
 }
 
 .login-swipe-card:nth-child(3) {
-    background: linear-gradient(var(--theme-primary) 0%, var(--theme-accent-2) 50%);
+    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-accent-2) 50%);
 } */
 
 .login-swipe-container {
@@ -59,6 +59,7 @@
 
 .login-swipe-card-svg {
     width: 60%;
+    max-width: 200px;
     align-self: center;
     padding-bottom: 60px;
 }
