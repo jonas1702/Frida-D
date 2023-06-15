@@ -13,12 +13,13 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(var(--theme-primary) 0%, var(--theme-accent-4) 50%);
+    background: var(--theme-primary);
     border-radius: inherit;
 }
 
 /* .login-swipe-card:nth-child(1) {
     background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-gradient-2) 50%);
+    linear-gradient(var(--theme-primary) 0%, var(--theme-accent-4) 50%);
 }
 
 .login-swipe-card:nth-child(2) {
@@ -41,7 +42,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 80px 20px 0px 20px;
+    padding: 80px 30px 10px 30px;
     transition: all .2s ease;
 }
 

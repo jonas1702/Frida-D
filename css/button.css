@@ -68,6 +68,10 @@
     color: var(--theme-on-primary) !important;
 }
 
+.primary-button:hover {
+    transform: scale(1.05);
+}
+
 /* check for none hover devices */
 
 @media all and (hover:hover) {
