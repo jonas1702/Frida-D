@@ -135,7 +135,6 @@
     font-size: .85rem;
     font-family: var(--typography-font-secondary-bold);
     padding: 10px 15px;
-    margin: 0px 10px;
     border-radius: 20px !important;
     outline-offset: 0px;
     cursor: pointer;
@@ -149,7 +148,7 @@
     background-color: var(--theme-primary-light) !important;
 }
 
-.nav-list-item > a, .nav-list-item--active > a {
+.nav-list-item__text{
     color: var(--theme-on-background);
 }
 
@@ -224,28 +223,12 @@
     position: fixed;
 }
 
-/* contact */
-.contact__small {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.contact-text {
-    font-size: 1.2rem !important;
-    cursor: pointer;
-}
-
-.contact__small-info-bold {
-     font-family: var(--typography-font-secondary-bold) !important;
-}
-
 @media all and (hover:hover) {
     .nav-list-item--large:hover {
         background-color: var(--theme-primary-very-light);
     }
 
-    .nav-list-item--large > a:active {
+    .nav-list-item--large:active > .nav-list-item__text {
         color: var(--theme-primary);
     }
 }

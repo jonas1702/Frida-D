@@ -63,7 +63,7 @@ a[href^=tel], a {
     border: none;
     outline: 2px solid var(--theme-accent-2) !important;
     outline-offset: 5px;
-    border-radius: 15px;
+    border-radius: var(--border-radius); /* default border radius*/
     transition: none !important;
 }
 input:autofill, input:-webkit-autofill  {

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/templte.css">
     <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/toast.css">
 
 
     <link rel="preconnect" href="//www.wkstatic.de">
@@ -30,10 +31,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" 
     rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Frida D</title>
 </head>
-<body>
-    <script src="script.js" defer></script>
+<body onkeypress="handleEnter(event)">
+    
     <header class="nav">
         <div class="nav-container">
             <div class="logo" name='reload' tabindex="0">
@@ -55,15 +57,15 @@
                 <ul class="nav-list-container list--flex">
                     <li class="nav-list-item--large nav-list-item--active list-item--active" name='reload' tabindex="0">
                         <span class="list-item__icon material-icons-round">home</span>
-                        <a class="nav-list-item__text" tabindex="-1">Home</a>
+                        <span class="nav-list-item__text">Home</span>
                     </li>
                     <li class="nav-list-item--large nav-list-item list-item" name='contact' tabindex="0">
                         <span class="list-item__icon material-icons-round">call</span>
-                        <a class="nav-list-item__text" tabindex="-1">Contact</a>
+                        <span class="nav-list-item__text">Contact</span>
                     </li>
                     <li class="nav-list-item--large nav-list-item list-item" name='pricing' tabindex="0">
                         <span class="list-item__icon material-icons-round">sell</span>
-                        <a class="nav-list-item__text" tabindex="-1">Pricing</a>
+                        <span class="nav-list-item__text">Pricing</span>
                     </li>
                 </ul>
             </div>
@@ -86,15 +88,15 @@
             <ul class="nav-list-container">
                 <li class="nav-list-item--active nav-list-item--mobile list-item--active">
                     <span class="list-item__icon material-icons-round">home</span>
-                    <a class="nav-list-item__text" tabindex="-1">Home</a>
+                    <span class="nav-list-item__text">Home</span>
                 </li>
                 <li class="nav-list-item nav-list-item--mobile contact">
                     <span class="list-item__icon material-icons-round">call</span>
-                    <a class="nav-list-item__text" tabindex="-1">Contact</a>
+                    <span class="nav-list-item__text">Contact</span>
                 </li>
                 <li class="nav-list-item nav-list-item--mobile pricing">
                     <span class="list-item__icon material-icons-round">sell</span>
-                    <a class="nav-list-item__text" tabindex="-1">Pricing</a>
+                    <span class="nav-list-item__text">Pricing</span>
                 </li>
                 <li class="nav-list-item list-item--active">
                     <div class="contact__small">
@@ -194,10 +196,10 @@
                 <div class="contact-section-info-text text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
                 <div class="contact__small contact__small-03">
                     <div class="contact__small-info">
-                        <div class="contact__small-info-text contact-text text">info@wktech.com</div>
-                        <div class="contact__small-info-bold text">+49 012 203937</div>
+                        <div class="contact__small-info-text contact-text copyElm text">info@wktech.com</div>
+                        <div class="contact__small-info-bold contact-text copyElm text">+49 012 203937</div>
                     </div>
-                    <div class="contact__small-adress tex contact-text text">Ostbordweg 203 <br>20212 Schenefeld</div>
+                    <div class="contact__small-adress tex contact-text copyElm text">Ostbordweg 203 <br>20212 Schenefeld</div>
                 </div>
                 
             </div>  

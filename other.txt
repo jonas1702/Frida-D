@@ -108,3 +108,7 @@ css:
     width: min(28vw, 250px) ;
     z-index: -1;
 } */
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+/* Der code für die toast animations und so kommt von https://www.youtube.com/watch?v=HhpbzPMCKDc weil ich ansonsten keine coolen toast libraries gefunden habe*/
