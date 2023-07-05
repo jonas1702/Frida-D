@@ -18,3 +18,14 @@ function move() {
 }
 
 setInterval(move, 10000)
+
+Array.from(document.querySelectorAll('[name=reload]')).forEach(element => {
+    element.addEventListener('click', () => location.reload())
+    console.log('click')
+})
+
+Array.from(document.querySelectorAll('[name=up]')).forEach(element => {
+    element.addEventListener('click', () => window.scrollTo(0, 0))
+})
+
+

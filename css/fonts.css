@@ -4,45 +4,93 @@
 @font-face{
     font-family: 'Nunito Sans Light';
     src: url('../Fonts/NunitoSans-Light.ttf') format('truetype');
-    font-weight: 100;
     font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
 }
 
 /*Nunito Sans Black*/
 @font-face{
     font-family: 'Nunito Sans Black';
     src: url('../Fonts/NunitoSans-Black.ttf') format('truetype');
-    font-weight: 100;
     font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
 }
 
 /*Ubuntu Light*/
 @font-face{
     font-family: 'Ubuntu Light';
     src: url('../Fonts/Ubuntu-Light.ttf') format('truetype');
-    font-weight: 100;
     font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
 }
 
 @font-face{
     font-family: 'Ubuntu Regular';
     src: url('../Fonts/Ubuntu-Regular.ttf') format('truetype');
-    font-weight: 100;
     font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
 }
 
 /*Ubuntu Medium*/
 @font-face{
     font-family: 'Ubuntu Medium';
     src: url('../Fonts/Ubuntu-Medium.ttf') format('truetype');
-    font-weight: 100;
     font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
 }
 
 /*Ubuntu Bold*/
 @font-face{
     font-family: 'Ubuntu Bold';
     src: url('../Fonts/Ubuntu-Bold.ttf') format('truetype');
-    font-weight: 100;
     font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
 }

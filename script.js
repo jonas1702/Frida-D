@@ -19,7 +19,10 @@ menu.addEventListener('click', () => {
     if (expanded == false) {
         mobile_expand.style.top = '-500px'
         blur.style.display = 'none'
-        buttons.style.display = 'flex'
+        if (window.innerWidth >= 700 && window.innerWidth <= 1000) {
+          buttons.style.display = 'flex'
+        }
+       
     }
     if (expanded == true) {
         mobile_expand.style.top = '90px'
@@ -43,6 +46,16 @@ mobileNavButtons.forEach(button => {
     button.addEventListener('click', () => {
         menu.click()
     })
+})
+
+window.addEventListener('resize', () => {
+      if (window.innerWidth <= 1000 && window.innerWidth >= 700 && expanded == false) {
+        buttons.style.display = 'flex'
+      }
+
+      if (window.innerWidth < 700) {
+        buttons.style.display = 'none'
+      }
 })
 
 document.querySelector('.contact').addEventListener('click', () => window.scrollTo(0, getOffset(document.querySelector('.contact-section-03')).top))
@@ -71,14 +84,7 @@ function getOffset(el) {
             form.classList.remove('form-field--wrong')
         }
     })
-    if (submitTrue == true) {
-        const newToast = new Toast({
-            text: "Submit successful",
-            position: "top-right",
-            pauseOnHover: true,
-            pauseOnFocusLoss: true,
-          })
-    } else {
+    if (submitTrue == false) {
         const newToast = new Toast({
             text: "Submit failed",
             position: "top-right",
@@ -87,6 +93,19 @@ function getOffset(el) {
           })
     }
     
+}
+function handleLogin() {
+      
+  let forms = Array.from(document.querySelectorAll('.login-interface-form-field'))
+  let loginTrue = true
+  forms.forEach(form => {
+      if (form.value.length == 0) {
+          form.classList.add('form-field--wrong')
+          loginTrue = false
+      } else {
+          form.classList.remove('form-field--wrong')
+      }
+  })
 }
 
 
@@ -160,9 +179,9 @@ switchBtn.addEventListener('click', () => {
 
 
 /* nav scroll */
-
 Array.from(document.querySelectorAll('[name=reload]')).forEach(element => {
     element.addEventListener('click', () => location.reload())
+    console.log('click')
 })
 
 Array.from(document.querySelectorAll('[name=up]')).forEach(element => {
@@ -173,20 +192,8 @@ document.querySelector('[name=contact]').addEventListener('click', () => window.
 document.querySelector('[name=pricing]').addEventListener('click', () => window.scrollTo(0, 1740))
 
 
-function handleLogin() {
-    
-    let forms = Array.from(document.querySelectorAll('.login-interface-form-field'))
-    forms.forEach(form => {
-        if (form.value.length == 0) {
-            form.classList.add('form-field--wrong')
-        } else {
-            form.classList.remove('form-field--wrong')
-        }
-    })
-}
-
 /* !!! */
-/* Der code für die toast animations und so kommt von https://www.youtube.com/watch?v=HhpbzPMCKDc weil ich ansonsten keine coolen toast libraries gefunden habe*/
+/* Der code für die toast animations und so kommt von https://github.com/WebDevSimplified/live-toast-notification-library weil ich ansonsten keine coolen toast libraries gefunden habe*/
 
 const DEFAULT_OPTIONS = {
     autoClose: 5000,

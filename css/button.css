@@ -17,7 +17,7 @@
 }
 
 .button {
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius) !important;
     width: fit-content;
     height: fit-content;
     padding: 12px 30px;
@@ -33,6 +33,7 @@
     outline: 1px solid var(--theme-primary);
     outline-offset: -1px !important;
     color: var(--theme-primary);
+    border-radius: inherit;
     background-color: var(--theme-background-1);
 }
 
@@ -51,7 +52,7 @@
     top: 50%;
     transform: translate(-50%,-50%);
     background-color: var(--theme-primary);
-    border-radius: 50%;
+    border-radius: inherit;
     width: 0px;
     height: 0px;
     padding: 0px;
@@ -68,9 +69,9 @@
     color: var(--theme-on-primary) !important;
 }
 
-.primary-button:hover {
+/* .primary-button:hover {
     transform: scale(1.05);
-}
+} */
 
 /* check for none hover devices */
 

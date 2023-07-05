@@ -111,4 +111,4 @@ css:
 
 !!!!!!!!!!!!!!!!!!!!!!!!
 
-/* Der code für die toast animations und so kommt von https://www.youtube.com/watch?v=HhpbzPMCKDc weil ich ansonsten keine coolen toast libraries gefunden habe*/
+/* Der code für die toast animations und so kommt von https://github.com/WebDevSimplified/live-toast-notification-library weil ich ansonsten keine coolen toast libraries gefunden habe*/
