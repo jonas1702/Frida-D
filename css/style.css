@@ -312,7 +312,8 @@
     grid-row: 1;
     grid-column: 2;
 
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
 }
 
 .benefit-section-item-text {
@@ -359,7 +360,7 @@
 @media all and (min-width: 750px) {
     .benefit-section-item {
         grid-template-columns: 100px auto;
-        grid-template-rows: 40px auto;
+        grid-template-rows: 30px auto;
         column-gap: 20px;
         padding: 0px;
         margin: 0px;
@@ -408,7 +409,7 @@
 }
 
 .contact-section-info-heading {
-    font-size: 2.4rem;
+    font-size: 2.0rem;
     padding: 0px 0px 20px 0px;
     text-align: center;
 }
@@ -424,7 +425,6 @@
 }
 
 .contact-text {
-    font-size: 1.2rem !important;
     cursor: pointer;
 }
 
@@ -495,6 +495,7 @@
 .form-text {
     font-family: var(--typography-font-secondary-bold);
     font-size: 1rem;
+    line-height: 1.4rem;
     color: var(--theme-on-background);
 }
 
@@ -648,7 +649,7 @@
 }
 
 .pricing-section-info-heading {
-    font-size: 2.4rem;
+    font-size: 2.0rem;
     margin: 20px 0px;
 }
 

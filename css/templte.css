@@ -23,7 +23,7 @@
     --theme-accent-3: hsla(0, 89%, 86%, 0.5);
     --theme-accent-4: hsl(263, 81%, 56%);
 	
-	--theme-gradient-1: hsl(337, 63%, 48%);
+	--theme-gradient-1: hsl(337, 63%, 48%) ;
 	--theme-gradient-2: hsl(5, 100%, 67%);
 
 
@@ -66,6 +66,7 @@ a[href^=tel], a {
     border-radius: var(--border-radius); /* default border radius*/
     transition: none !important;
 }
+
 input:autofill, input:-webkit-autofill  {
     color: var(--theme-on-background);
 }

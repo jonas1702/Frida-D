@@ -8,7 +8,7 @@ function move() {
     loginSlide.forEach(card => {
         card.style.transform = `translateX(-${index}%)`
     })
-    if (index == 300) {
+    if (index == 200) {
         loginSlide.forEach(card => {
             card.style.transform = `translateX(0)`
             index = 0

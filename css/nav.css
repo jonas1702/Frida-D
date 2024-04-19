@@ -209,6 +209,12 @@
     margin: 0px 10px;
 }
 
+.nav-list-item--mobile__contact {
+    height: 45px !important;
+    font-size: 1rem !important;
+    margin: 0px 10px;
+}
+
 .nav-list-item--mobile:active .nav-list-item__text {
     color: var(--theme-primary);
 }
