@@ -32,6 +32,7 @@
         <title>Frida D Login</title>
         <script src="script.js" defer></script>
         <script src="login.js" defer></script>
+        <script src="buttons.js" defer></script>
     </head>
 <body>
     
@@ -79,8 +80,9 @@
                     <span class="button-text">Log in</span>
                 </button>
                 <button class="secondary-button button nav-secondary-button nav-button list-item" tabindex="0">
-                    <span class="button-text">Sign up</span>
-                    <span class="button-hover"></span>
+                    <span class="button-text secondary-button__text">Sign up</span>
+                    <span class="secondary-button-hover"></span>
+                    <a href="#" class="secondary-button__ripple" tabindex="-1"></a>
                 </button>
             </div>
         </div>
@@ -124,8 +126,9 @@
                 <span class="button-text">Log in</span>
             </button>
             <button class="secondary-button button nav-button list-item" tabindex="-1">
-                <span class="button-text">Sign up</span>
-                <span class="button-hover"></span>
+                <span class="button-text secondary-button__text">Sign up</span>
+                <span class="secondary-button-hover"></span>
+                <a href="#" class="secondary-button__ripple" tabindex="-1"></a>
             </button>
         </div>
     </aside>
@@ -196,8 +199,9 @@
                     </div>
                     <div class="footer-large-list-buttons">
                         <button class="secondary-button footer-button button" tabindex="0">
-                            <span class="button-text">Send Message</span>
-                            <span class="button-hover footer-hover"></span>
+                            <span class="button-text secondary-button__text">Send Message</span>
+                            <span class="secondary-button-hover footer-hover"></span>
+                            <a href="#" class="secondary-button__ripple" tabindex="-1"></a>
                         </button>
                         <button class="icon-button footer-icon-button" name="up">
                             <span class="material-icons-round icon-button--icon">expand_less</span>

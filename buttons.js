@@ -5,26 +5,17 @@ let hoverTimeout;
 
 secondary_buttons.forEach(button => {
     button.addEventListener('mouseenter', () => {
+        console.log('hover')
         hoverTimeout = setTimeout(function() {
-            button.children[0].classList.add('finartis-secondary-button__text--hover')
-            button.children[1].classList.add('finartis-secondary-button-hover--active')
-
-            if (button.id == 'footer-button') {
-                button.children[0].classList.add('secondary-dark')
-                button.children[1].classList.add('secondary-dark')
-            }
-          }, 60);
+            button.children[0].classList.add('secondary-button__text--hover')
+            button.children[1].classList.add('secondary-button-hover--active')
+          }, 50);
     })
 
     button.addEventListener('mouseleave', () => {
         clearTimeout(hoverTimeout);
-        button.children[0].classList.remove('finartis-secondary-button__text--hover')
-        button.children[1].classList.remove('finartis-secondary-button-hover--active')
-
-        if (button.id == 'footer-button') {
-            button.children[0].classList.remove('secondary-dark')
-            button.children[1].classList.remove('secondary-dark')
-        }
+        button.children[0].classList.remove('secondary-button__text--hover')
+        button.children[1].classList.remove('secondary-button-hover--active')
     })
     
 })
