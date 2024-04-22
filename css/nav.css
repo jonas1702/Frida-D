@@ -135,7 +135,7 @@
     font-size: .85rem;
     font-family: var(--typography-font-secondary-bold);
     padding: 10px 15px;
-    border-radius: 20px !important;
+    border-radius: var(--border-radius);
     outline-offset: 0px;
     cursor: pointer;
 }
@@ -254,10 +254,6 @@
         grid-column: 1;
     }
 
-    .login-section {
-        display: flex;
-    }
-
     .nav-container {
         grid-template-columns: 80px 1fr 1fr;
     }
@@ -267,6 +263,7 @@
     }
 
     .login-section {
+        display: flex;
         grid-column: 3;
         justify-self: flex-end;
     }

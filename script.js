@@ -29,7 +29,7 @@ menu.addEventListener('click', () => {
         setTimeout( function () {
             blur.style.display = 'block' 
             buttons.style.display = 'none'
-        },200);
+        }, 100);
     }
     
 })
@@ -49,13 +49,25 @@ mobileNavButtons.forEach(button => {
 })
 
 window.addEventListener('resize', () => {
-      if (window.innerWidth <= 1000 && window.innerWidth >= 700 && expanded == false) {
-        buttons.style.display = 'flex'
-      }
+    let width = window.screen.width
 
-      if (window.innerWidth < 700) {
+    //   if (width <= 1000 && width >= 700 && expanded == true) {  
+    //     buttons.style.display = 'flex'
+    //   }
+
+    //   if (width < 700) {
+    //     buttons.style.display = 'none !important'
+    //   }
+
+      if (window.innerWidth >= 700) {
+        if(expanded == true) {
+            menu.click()
+        }
+        buttons.style.display = 'flex'
+    }
+    if (window.innerWidth < 700) {
         buttons.style.display = 'none'
-      }
+    }
 })
 
 document.querySelector('.contact').addEventListener('click', () => window.scrollTo(0, getOffset(document.querySelector('.contact-section-03')).top))
